@@ -1,0 +1,8 @@
+`sudo pacman -S gestures`
+Launch gestures
+Add four new gestures (plus top left)
+Swipe, Three fingers and:
+- Up: `xdotool key Ctrl+Alt+Up`
+- Down: `xdotool key Ctrl+Alt+Down`
+- Left: `xdotool key Ctrl+Alt+Left`
+- Right: `xdotool key Ctrl+Alt+Right`

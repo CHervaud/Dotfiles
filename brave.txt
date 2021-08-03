@@ -1,0 +1,10 @@
+use sync code (send to mee6 by discord)
+
+extensions:
+- Hub XP Intra
+- Dark Reader `https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=fr`
+- Epitech Manager `https://chrome.google.com/webstore/detail/epitech-manager/jekeepplfbimflieidnckjigmmnjaadm?hl=fr`
+- GitHub Dark Theme `https://chrome.google.com/webstore/detail/github-dark-theme/odkdlljoangmamjilkamahebpkgpeacp?hl=fr`
+- IGRAAL - Cashback & codes promo `https://chrome.google.com/webstore/detail/igraal-cashback-codes-pro/kmhkepipobnjllejbafajoemahjejdcm?hl=fr`
+- MyEpitech `https://chrome.google.com/webstore/detail/myepitech/hnkcafanoncncpkgboikhhikdomenepb?hl=fr`
+- Speedtest by Ookla `https://chrome.google.com/webstore/detail/speedtest-by-ookla/pgjjikdiikihdfpoppgaidccahalehjh?hl=fr`

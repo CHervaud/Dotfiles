@@ -1,0 +1,9 @@
+neovim (`nvim`), all plugins
+paru
+zsh, ohmyzsh
+obs
+discord
+node
+docker
+gestures
+brave
