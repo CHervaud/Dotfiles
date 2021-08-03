@@ -28,15 +28,6 @@ set expandtab
 
 hi CocInfoFloat guifg=#hex-color guibg=#hex-color
 
-let mapleader="," " Set auto tek header plugin
-
-" Trailing space mark
-let g:better_whitespace_ctermcolor='Red'
-let g:better_whitespace_guicolor='#E06C75'
-
-" Vimspector
-let g:vimspector_enable_mappings="HUMAN"
-
 source $HOME/.config/nvim/plugs-set/vimplug.vim
 
 source $HOME/.config/nvim/plugs-set/coc.vim
@@ -45,5 +36,8 @@ source $HOME/.config/nvim/plugs-set/arduino.vim
 source $HOME/.config/nvim/plugs-set/gitgutter.vim
 source $HOME/.config/nvim/plugs-set/nerdtree.vim
 source $HOME/.config/nvim/plugs-set/mkdp.vim
+source $HOME/.config/nvim/plugs-set/gitmessenger.vim
+source $HOME/.config/nvim/plugs-set/better_whitespace.vim
+source $HOME/.config/nvim/plugs-set/vimspector.vim
 
 source $HOME/.config/nvim/keybindings/map.vim

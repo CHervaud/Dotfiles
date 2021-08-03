@@ -1,3 +1,5 @@
+let mapleader=","
+
 inoremap #i< #include <.h><Esc>hhi
 inoremap #i" #include "my.h"<Esc>hhi
 inoremap inti int i = 0;

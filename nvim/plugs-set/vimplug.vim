@@ -20,5 +20,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'codota/tabnine-vim'
+Plug 'codota/tabnine-vim'
 
 call plug#end()
