@@ -26,7 +26,13 @@ colorscheme onedark
 set ts=4 sw=4
 set expandtab
 
-hi CocInfoFloat guifg=#hex-color guibg=#hex-color
+" Fold with 'zc' and 'zo'
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+
+autocmd StdinReadPre * let s:std_in=1
 
 source $HOME/.config/nvim/plugs-set/vimplug.vim
 
