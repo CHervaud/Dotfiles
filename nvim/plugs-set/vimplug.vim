@@ -11,8 +11,13 @@ Plug 'AndrewRadev/tagalong.vim'
 Plug 'vbe0201/vimdiscord'
 Plug 'rhysd/git-messenger.vim'
 Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'stevearc/vim-arduino'
 Plug 'yggdroot/indentline'
 Plug 'puremourning/vimspector'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'airblade/vim-gitgutter'
+Plug 'ap/vim-css-color'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 call plug#end()

@@ -1,5 +1,7 @@
 syntax enable                                   " Enable syntax higllighing
 
+set nofixendofline                              " Disable adding new line and end of oppened files
+
 " Auto-completion
 set wildignorecase                              " Make filenames autocompletion case-insensitive
 set wildignore+=*.a,*.o,*.gcno,*.gcda           " Exclude tmp fils from autocompletion
@@ -35,17 +37,13 @@ let g:better_whitespace_guicolor='#E06C75'
 " Vimspector
 let g:vimspector_enable_mappings="HUMAN"
 
-" NERDtree config
-map <C-n> :NERDTreeToggle<CR>
-" When open a directory, start tree automatically
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
-
 source $HOME/.config/nvim/plugs-set/vimplug.vim
-source $HOME/.config/nvim/plugs-set/vundle.vim
 
 source $HOME/.config/nvim/plugs-set/coc.vim
 source $HOME/.config/nvim/plugs-set/airline.vim
 source $HOME/.config/nvim/plugs-set/arduino.vim
+source $HOME/.config/nvim/plugs-set/gitgutter.vim
+source $HOME/.config/nvim/plugs-set/nerdtree.vim
+source $HOME/.config/nvim/plugs-set/mkdp.vim
 
 source $HOME/.config/nvim/keybindings/map.vim

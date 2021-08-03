@@ -72,11 +72,20 @@ plugins=(
         git
         zsh-autosuggestions
         colored-man-pages
+        zsh-syntax-highlighting
+        k
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+# For tools that use visual editors (such as git for commits)
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
+# Change colors with doing ls
+export LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*.h=01;30;105:*.hpp=01;30;105:*.c=01;30;46:*.cpp=01;30;46:*Dockerfile=01;46;97:*docker-compose.yml=01;97;105';
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -100,15 +109,12 @@ source $ZSH/oh-my-zsh.sh
 #
 
 alias l="clear;ls -hla"
-alias v="nvim"
+alias kl="k-git-adapt"
 alias \*="cd .."
 alias \*\*="cd ..;l"
 alias \*\*\*="cd ..;cd ..;l"
 alias q="exit"
-alias emacs="echo \"vim > emacs\";v"
 alias c="mr_clean;l"
-alias e="coloroutput"
-alias lib="~/Documents/./lib"
 alias cl="clear"
 alias sl="sl -Flac"
 alias ut="c; make tests_run; gcvr"
@@ -118,8 +124,8 @@ alias ga="git add"
 alias gc="git commit"
 alias gcm="git commit -m"
 alias gacp="git add .;git commit -m \"Update\";git push"
-alias gp="git push"
-alias gpl="git pull"
+alias gp="git push origin \$(git branch --show-current)"
+alias gpl="git pull origin \$(git branch --show-current)"
 alias gs="git switch"
 alias gb="git branch"
 alias gbdel="git branch -D"
@@ -129,8 +135,7 @@ alias nrm="norminette -t -A --indent=4 --major=3"
 alias trouve="grep -rn $1"
 alias search="grep -rl $1"
 alias debg="make CC=\"gcc -g3\" re"
-alias myvalgrind="valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all"
-alias Gupdate="sudo pacman -Sy; sudo pacman -Syu; sudo pacman -Syy; sudo pacman -Syyy"
+alias mnoerr="make CFLAGS="" re"
 alias mkae="make"
 alias mkea="make"
 alias mkae="make"
@@ -138,9 +143,9 @@ alias kmae="make"
 alias maek="make"
 alias mak="make"
 alias mke="make"
-alias mnoerr="make CFLAGS="" re"
-alias ipad_home="sshpass -p alpine ssh root@192.168.1.51"
-alias ipad_ionis="sshpass -p alpine ssh root@10.134.200.45"
+alias myvalgrind="valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all"
+alias Gupdate="sudo pacman -Sy; sudo pacman -Syu; sudo pacman -Syy; sudo pacman -Syyy"
+alias watchc="watch -c"
 #alias ls="echo sleep 1 >> ~/.bashrc; ls"
 
 function gda {
@@ -153,13 +158,31 @@ function gbs {
     git switch $1
 }
 
-function cdl {
-    cd $1
-    ls
+function v {
+    if [[ -n $1 ]];
+    then
+        nvim $1
+    else
+        nvim .
+    fi
 }
 
-function govi {
-    cd $1
-    v .
-    cd ..
+function k-git-adapt {
+    if [[ $PWD == $HOME ]];
+    then
+        k -Ah --no-vcs $1
+    else
+        k -Ah $1
+    fi
+}
+
+function gacp {
+    git add .
+    if [[ -n $1 ]];
+    then
+        git commit -m $1
+    else
+        git commit -m "Update"
+    fi
+    gp
 }
