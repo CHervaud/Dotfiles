@@ -8,6 +8,6 @@ node
 docker
 gestures
 brave
-gcc, clangd, bear
+gcc, clangd, compiledb
 criterion, gcovr
 norminette
