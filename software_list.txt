@@ -1,9 +1,13 @@
+python3
 neovim (`nvim`), all plugins
 paru
 zsh, ohmyzsh
 obs
-discord
+discord, teams
 node
 docker
 gestures
 brave
+gcc, clangd, bear
+criterion, gcovr
+norminette
