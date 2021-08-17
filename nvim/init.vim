@@ -16,7 +16,8 @@ set termguicolors                               " Set colorscheme
 set clipboard=unnamedplus                       " Copy and paste between vim and others
 set nocp
 
-set nu rnu
+set number                                      " Display lines number
+set nu rnu                                      " Make lines number display relative
 
 " Color theme
 set background=dark
