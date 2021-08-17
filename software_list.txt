@@ -1,7 +1,7 @@
 python3
 neovim (`nvim`), vim plug(https://github.com/junegunn/vim-plug), all plugins
 paru(https://github.com/Morganamilo/paru)
-zsh, ohmyzsh, zplug(https://github.com/zplug/zplug)
+zsh, ohmyzsh
 obs
 discord, teams
 node
