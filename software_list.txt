@@ -1,13 +1,14 @@
 python3
-neovim (`nvim`), all plugins
-paru
-zsh, ohmyzsh
+neovim (`nvim`), vim plug(https://github.com/junegunn/vim-plug), all plugins
+paru(https://github.com/Morganamilo/paru)
+zsh, ohmyzsh, zplug(https://github.com/zplug/zplug)
 obs
 discord, teams
 node
-docker
+docker, docker-compose
 gestures
 brave
 gcc, clangd, compiledb
 criterion, gcovr
-norminette
+norminette(https://github.com/aureliancnx/Bubulle-Norminette)
+pinta, krita

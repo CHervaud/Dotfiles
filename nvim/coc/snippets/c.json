@@ -3,7 +3,7 @@
     "prefix": "header_c",
     "body": [
       "/*",
-      "** EPITECH PROJECT, 2020",
+      "** EPITECH PROJECT, 2021",
       "** ${1:ProjectName}",
       "** File description:",
       "** ${2:FileDescription}",
@@ -17,7 +17,7 @@
     "prefix": "header_h",
     "body": [
       "/*",
-      "** EPITECH PROJECT, 2020",
+      "** EPITECH PROJECT, 2021",
       "** ${1:ProjectName}",
       "** File description:",
       "** ${2:FileDescription}",
