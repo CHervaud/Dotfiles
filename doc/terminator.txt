@@ -1,0 +1,1 @@
+Copy the content of `Dotfiles/terminator/config`(on gihub, clone repository) in ~/.config/terminator/config
