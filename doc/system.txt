@@ -1,0 +1,2 @@
+Enable touchpad clicktouch: Go to "Settings Manager > Mouse and Touchpad", Select Touchpad in the devices list, Go on sub selection "Touchpad", Check "Tap touchpad to click"
+Change system theme: Go to "Settings Manager > Appearance", Select the theme you want (recommended: `Matcha-dark-sea`)
