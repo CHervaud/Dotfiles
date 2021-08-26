@@ -33,18 +33,20 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=2
 
-autocmd StdinReadPre * let s:std_in=1
 
 source $HOME/.config/nvim/plugs-set/vimplug.vim
 
 source $HOME/.config/nvim/plugs-set/coc.vim
+
 source $HOME/.config/nvim/plugs-set/airline.vim
 source $HOME/.config/nvim/plugs-set/arduino.vim
-source $HOME/.config/nvim/plugs-set/gitgutter.vim
-source $HOME/.config/nvim/plugs-set/nerdtree.vim
-source $HOME/.config/nvim/plugs-set/mkdp.vim
-source $HOME/.config/nvim/plugs-set/gitmessenger.vim
 source $HOME/.config/nvim/plugs-set/better_whitespace.vim
+source $HOME/.config/nvim/plugs-set/gitgutter.vim
+source $HOME/.config/nvim/plugs-set/gitmessenger.vim
+source $HOME/.config/nvim/plugs-set/mkdp.vim
+source $HOME/.config/nvim/plugs-set/nerdtree.vim
+source $HOME/.config/nvim/plugs-set/rainbow.vim
+source $HOME/.config/nvim/plugs-set/tree.vim
 source $HOME/.config/nvim/plugs-set/vimspector.vim
 
 source $HOME/.config/nvim/keybindings/map.vim
