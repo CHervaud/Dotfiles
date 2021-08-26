@@ -23,4 +23,4 @@ Install neovim with python3: `python3 -m pip install --user --upgrade pynvim`
 Install with pip: `pip3 install compiledb`
 Install with github: `paru`, `vimplug`, `ohmyzsh`, `norminette`, `betterdiscord`
 Install with paru: `paru teams`, `paru criterion`, `paru deezer`
-Check Post installation docs for: system, brave, zsh, neovim, git, docker, gestures, discord
+Check Post installation docs for: terminator, system, brave, zsh, neovim, git, docker, gestures, discord
