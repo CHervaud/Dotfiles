@@ -1,4 +1,4 @@
 Create docker group: `sudo groupadd docker`
 Add user to docker group: `sudo usermod -aG docker $USER`
 Reload: `newgrp docker`
-Test: `docker run hello-world`
+Test: `docker run hello-world` (Start docker `sudo systemctl start docker` if needed)
