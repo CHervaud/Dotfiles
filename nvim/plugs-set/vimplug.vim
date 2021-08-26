@@ -4,7 +4,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Nero-F/vim-tek-header'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
-Plug 'joshdick/onedark.vim.git'
+Plug 'joshdick/onedark.vim'
 Plug 'tpope/vim-surround'
 Plug 'psliwka/vim-smoothie'
 Plug 'AndrewRadev/tagalong.vim'
