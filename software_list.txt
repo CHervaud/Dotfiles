@@ -1,4 +1,6 @@
+brave
 python3
+git
 neovim (`nvim`), vim plug(https://github.com/junegunn/vim-plug), all plugins
 paru(https://github.com/Morganamilo/paru)
 zsh, ohmyzsh
@@ -7,7 +9,6 @@ discord, teams
 node
 docker, docker-compose
 gestures
-brave
 gcc, clangd, compiledb
 criterion, gcovr
 norminette(https://github.com/aureliancnx/Bubulle-Norminette)
