@@ -1,4 +1,9 @@
-`sudo pacman -S gestures`
+Install: `sudo pacman -S gestures`
+Add user to input group: `sudo gpasswd -a $USER input`
+Setup systemd app: `libinput-gestures-setup service`
+Enable autostart: `libinput-gestures-setup autostart`
+Start service: `libinput-gestures-setup start`
+
 Launch gestures
 Add four new gestures (plus top left)
 Swipe, Three fingers and:
