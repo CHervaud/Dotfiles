@@ -1,2 +1,8 @@
 Enable touchpad clicktouch: Go to "Settings Manager > Mouse and Touchpad", Select Touchpad in the devices list, Go on sub selection "Touchpad", Check "Tap touchpad to click"
 Change system theme: Go to "Settings Manager > Appearance", Select the theme you want (recommended: `Matcha-dark-sea`)
+Create shortcuts: Go to "Keyboard", Go on subsection "Application Shortcuts", Then add this shortcuts:
+`terminator` -> Ctrl+Alt+I
+`brave` -> Ctrl+Alt+O
+`discord` -> Ctrl+Alt+U
+`xfce4-screenshouter -r` -> Print
+`xfce4-screenshouter -f` -> Ctrl+Shift+Print

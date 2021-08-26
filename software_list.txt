@@ -21,4 +21,4 @@ Install pip: `python -m ensurepip --upgrade`
 Install with pip: `pip3 install compiledb`
 Install with github: `paru`, `vimplug`, `ohmyzsh`, `norminette`
 Install with paru: `paru teams`, `paru criterion`, `paru deezer`
-Check Post installation docs for: brave, zsh, neovim, git, docker, gestures
+Check Post installation docs for: system, brave, zsh, neovim, git, docker, gestures
