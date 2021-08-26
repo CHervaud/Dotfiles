@@ -7,7 +7,7 @@ paru(https://github.com/Morganamilo/paru)
 terminator
 zsh, ohmyzsh(https://github.com/ohmyzsh/ohmyzsh)
 obs
-discord, teams
+discord, betterdiscord, teams
 deezer
 node
 docker, docker-compose
@@ -21,6 +21,6 @@ Install with pacman: `sudo pacman -S brave python3 git vim neovim xclip terminat
 Install pip: `python -m ensurepip --upgrade; /usr/bin/python -m pip install --upgrade pip`
 Install neovim with python3: `python3 -m pip install --user --upgrade pynvim`
 Install with pip: `pip3 install compiledb`
-Install with github: `paru`, `vimplug`, `ohmyzsh`, `norminette`
+Install with github: `paru`, `vimplug`, `ohmyzsh`, `norminette`, `betterdiscord`
 Install with paru: `paru teams`, `paru criterion`, `paru deezer`
 Check Post installation docs for: system, brave, zsh, neovim, git, docker, gestures
