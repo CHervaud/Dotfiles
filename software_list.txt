@@ -1,7 +1,7 @@
 brave
 python3, pip
 git
-neovim, vimplug(https://github.com/junegunn/vim-plug), all plugins
+vim, neovim, vimplug(https://github.com/junegunn/vim-plug), all plugins
 paru(https://github.com/Morganamilo/paru)
 zsh, ohmyzsh(https://github.com/ohmyzsh/ohmyzsh)
 obs
@@ -14,7 +14,7 @@ criterion, gcovr
 norminette(https://github.com/aureliancnx/Bubulle-Norminette)
 pinta, krita
 
-Install with pacman: `sudo pacman -S brave python3 git neovim zsh obs-studio discord nodejs docker docker-compose gestures gcc clang gcovr pinta krita`
+Install with pacman: `sudo pacman -S brave python3 git vim neovim zsh obs-studio discord nodejs docker docker-compose gestures gcc clang gcovr pinta krita`
 Install pip: `python -m ensurepip --upgrade`
 Install with pip: `pip3 install compiledb`
 Install with github: `paru`, `vimplug`, `ohmyzsh`, `norminette`
