@@ -19,6 +19,7 @@ pinta, krita
 
 Install with pacman: `sudo pacman -S brave python3 git vim neovim xclip terminator zsh obs-studio discord nodejs docker docker-compose gestures gcc clang gcovr pinta krita`
 Install pip: `python -m ensurepip --upgrade; /usr/bin/python -m pip install --upgrade pip`
+Install neovim with python3: `python3 -m pip install --user --upgrade pynvim`
 Install with pip: `pip3 install compiledb`
 Install with github: `paru`, `vimplug`, `ohmyzsh`, `norminette`
 Install with paru: `paru teams`, `paru criterion`, `paru deezer`
