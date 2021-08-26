@@ -2,10 +2,12 @@ brave
 python3, pip
 git
 vim, neovim, vimplug(https://github.com/junegunn/vim-plug), all plugins
+xclip
 paru(https://github.com/Morganamilo/paru)
 zsh, ohmyzsh(https://github.com/ohmyzsh/ohmyzsh)
 obs
 discord, teams
+deezer
 node
 docker, docker-compose
 gestures
@@ -14,9 +16,9 @@ criterion, gcovr
 norminette(https://github.com/aureliancnx/Bubulle-Norminette)
 pinta, krita
 
-Install with pacman: `sudo pacman -S brave python3 git vim neovim zsh obs-studio discord nodejs docker docker-compose gestures gcc clang gcovr pinta krita`
+Install with pacman: `sudo pacman -S brave python3 git vim neovim xclip zsh obs-studio discord nodejs docker docker-compose gestures gcc clang gcovr pinta krita`
 Install pip: `python -m ensurepip --upgrade`
 Install with pip: `pip3 install compiledb`
 Install with github: `paru`, `vimplug`, `ohmyzsh`, `norminette`
-Install with paru: `paru teams`, `paru criterion`
+Install with paru: `paru teams`, `paru criterion`, `paru deezer`
 Check Post installation docs for: brave, zsh, neovim, git, docker, gestures
