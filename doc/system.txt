@@ -6,3 +6,4 @@ Create shortcuts: Go to "Keyboard", Go on subsection "Application Shortcuts", Th
 `discord` -> Ctrl+Alt+U
 `xfce4-screenshouter -r` -> Print
 `xfce4-screenshouter -f` -> Ctrl+Shift+Print
+Enable pacman colored output: Uncomment the line with `Color` in '/etc/pacman.conf'
