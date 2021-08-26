@@ -17,7 +17,7 @@ norminette(https://github.com/aureliancnx/Bubulle-Norminette)
 pinta, krita
 
 Install with pacman: `sudo pacman -S brave python3 git vim neovim xclip zsh obs-studio discord nodejs docker docker-compose gestures gcc clang gcovr pinta krita`
-Install pip: `python -m ensurepip --upgrade`
+Install pip: `python -m ensurepip --upgrade; /usr/bin/python -m pip install --upgrade pip`
 Install with pip: `pip3 install compiledb`
 Install with github: `paru`, `vimplug`, `ohmyzsh`, `norminette`
 Install with paru: `paru teams`, `paru criterion`, `paru deezer`
