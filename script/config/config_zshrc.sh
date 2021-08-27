@@ -27,5 +27,5 @@ check_error $? "Dotfile repository"
 
 # Config zshrc
 echo -e "\033[1m\033[96mConfiguring zshrc...\033[0m\n"
-cp /tmp/Dotfiles/zsh/zshrc $HOME/.zshrc
+cp /tmp/Dotfiles/data/zsh/zshrc $HOME/.zshrc
 check_error $? "zshrc"

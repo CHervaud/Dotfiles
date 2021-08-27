@@ -109,13 +109,13 @@ check_error $? "Dotfile repository"
 echo -e "\033[1m\033[96mConfiguring terminator...\033[0m\033[93m"
 mkdir $HOME/.config/terminator -p >> /dev/null
 ret_code=$?
-cp /tmp/Dotfiles/terminator/config $HOME/.config/terminator/config >> /dev/null
+cp /tmp/Dotfiles/data/terminator/config $HOME/.config/terminator/config >> /dev/null
 ret_code=$((ret_code + $?))
 check_error_config $ret_code "terminator"
 
 # Config zshrc
 echo -e "\033[1m\033[96mConfiguring zshrc...\033[0m\033[93m"
-cp /tmp/Dotfiles/zsh/zshrc $HOME/.zshrc
+cp /tmp/Dotfiles/data/zsh/zshrc $HOME/.zshrc
 check_error_config $? "zshrc"
 
 # Config zsh-autosuggestions zsh plugin
@@ -137,7 +137,7 @@ check_error_config $? "k zsh plugin"
 echo -e "\033[1m\033[96mConfiguring basic neovim...\033[0m\033[93m"
 mkdir $HOME/.config/nvim -p >> /dev/null
 ret_code=$?
-cp /tmp/Dotfiles/nvim/* -r $HOME/.config/nvim/ >> /dev/null
+cp /tmp/Dotfiles/data/nvim/* -r $HOME/.config/nvim/ >> /dev/null
 ret_code=$((ret_code + $?))
 check_error_config $ret_code "basic neovim"
 

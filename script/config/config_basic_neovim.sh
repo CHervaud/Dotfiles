@@ -29,6 +29,6 @@ check_error $? "Dotfile repository"
 echo -e "\033[1m\033[96mConfiguring basic neovim...\033[0m\n"
 mkdir $HOME/.config/nvim -p
 ret_code=$?
-cp /tmp/Dotfiles/nvim/* -r $HOME/.config/nvim/
+cp /tmp/Dotfiles/data/nvim/* -r $HOME/.config/nvim/
 ret_code=$((ret_code + $?))
 check_error $ret_code "basic neovim"

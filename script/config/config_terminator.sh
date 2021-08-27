@@ -29,6 +29,6 @@ check_error $? "Dotfile repository"
 echo -e "\033[1m\033[96mConfiguring terminator...\033[0m\n"
 mkdir $HOME/.config/terminator -p
 ret_code=$?
-cp /tmp/Dotfiles/terminator/config $HOME/.config/terminator/config
+cp /tmp/Dotfiles/data/terminator/config $HOME/.config/terminator/config
 ret_code=$((ret_code + $?))
 check_error $ret_code "terminator"
