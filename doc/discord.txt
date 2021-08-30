@@ -1,6 +1,0 @@
-Connect to discord
-Create Shortcuts: 'Enable/Disable mic' > F16(pause)
-Create Shortcuts: 'Enable/Disable mute' > F15(Arret)
-
-Install betterdiscord: `betterdiscord-installer`
-Copy the content of `Dotfiles/betterdiscord`(on gihub, clone repository) in $HOME/.config/BetterDiscord/plugins/
