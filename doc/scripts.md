@@ -8,8 +8,8 @@
 
 Here is what configuration scripts do or not:
 
-|          |Do                      |Do not|Documentation|
-|:---------|:----------------------:|:-------------------------------------------:|:-----------------------:|
+|          |Do                      |Do not                                       |Documentation        |
+|:---------|:----------------------:|:-------------------------------------------:|:-------------------:|
 |Terminator|          All           |                   Nothing                   |[here](terminator.md)|
 |System    |        Nothing         |                     All                     |  [here](system.md)  |
 |Brave     |        Nothing         |                     All                     |   [here](brave.md)  |

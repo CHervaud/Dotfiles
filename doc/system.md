@@ -60,7 +60,7 @@ Open `/etc/pacman.conf`:
 sudo vim /etc/pacman.conf
 ```
 
-Uncomment the line `Color`:
+Uncomment the line `Color`
 
 ![Uncomment color line](img/system_pacman-color.png)
 
