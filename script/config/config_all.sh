@@ -74,6 +74,22 @@ ret_code=$?
 ret_code=$((ret_code + $?))
 check_error $ret_code "Hack font for devicons"
 
+# Config git
+echo -e "\033[1m\033[96mConfiguring git...\033[0m\033[93m"
+git config --global user.name "Corentin Hervaud" >> /dev/null
+ret_code=$?
+git config --global user.email "corentin.hervaud@epitech.eu" >> /dev/null
+ret_code=$((ret_code + $?))
+check_error $ret_code "Git"
+
+# Config new ssh key
+echo -e "\033[1m\033[96mConfiguring new ssh key...\033[0m\033[93m"
+ssh-keygen -t ed25519 -C "chervaud@hp_manjaro" >> /dev/null
+ret_code=$?
+ssh-add $HOME/.ssh/id_ed25519 >> /dev/null
+ret_code=$((ret_code + $?))
+check_error $ret_code "new ssh key"
+
 # Config docker
 echo -e "\033[1m\033[96mConfiguring Docker...\033[0m\033[93m"
 sudo groupadd docker >> /dev/null
@@ -81,7 +97,7 @@ ret_code=$?
 sudo usermod -aG docker $USER >> /dev/null
 ret_code=$((ret_code + $?))
 newgrp docker >> /dev/null
-ret_code=$((ret_code + $))
+ret_code=$((ret_code + $?))
 check_error $ret_code "Docker"
 
 # Config Gestures
