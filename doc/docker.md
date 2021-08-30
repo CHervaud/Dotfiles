@@ -3,7 +3,7 @@
 #### What is done by scripts ?
 All of this section
 
-[Scripts doc](doc/scripts.md)
+[Scripts doc](scripts.md)
 
 ### Make docker commands runable without sudo
 
@@ -34,4 +34,4 @@ docker run hello-world
 
 ## Next doc
 
-Now it's time to check [gestures doc](doc/gestures.md)
+Now it's time to check [gestures doc](gestures.md)

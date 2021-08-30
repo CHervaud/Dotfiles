@@ -3,18 +3,18 @@
 #### What is done by scripts ?
 All of this section
 
-[Scipts doc](doc/scipts.md)
+[Scipts doc](scripts.md)
 
 ### Here's the list of all the softwares to install
 
 - brave
 - python3, pip
 - git
-- vim, neovim, vimplug(https://github.com/junegunn/vim-plug), all plugins
+- vim, neovim, vimplug
 - xclip
-- paru(https://github.com/Morganamilo/paru)
+- paru
 - terminator
-- zsh, ohmyzsh(https://github.com/ohmyzsh/ohmyzsh)
+- zsh, ohmyzsh
 - obs
 - discord, betterdiscord, teams
 - deezer
@@ -23,7 +23,7 @@ All of this section
 - gestures, libinput-gestures
 - gcc, clangd, compiledb
 - criterion, gcovr
-- norminette(https://github.com/aureliancnx/Bubulle-Norminette)
+- norminette
 - pinta, krita
 
 ### And how to install it
@@ -92,4 +92,4 @@ paru teams; paru criterion; paru deezer; paru betterdiscord
 
 ## Next doc
 
-Now it's time to check terminator doc [here](doc/terminator.md)
+Now it's time to check terminator doc [here](terminator.md)

@@ -3,7 +3,7 @@
 #### What is done by scripts ?
 All of this section
 
-[Scripts doc](doc/scripts.md)
+[Scripts doc](scripts.md)
 
 ### Configure zshrc
 
@@ -32,4 +32,4 @@ git clone https://github.com/supercrabtree/k ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/
 
 ## Next doc
 
-Now it's time to check [neovim doc](doc/neovim.md)
+Now it's time to check [neovim doc](neovim.md)

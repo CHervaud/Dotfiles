@@ -3,7 +3,7 @@
 #### What is done by scripts ?
 All of this section
 
-[Scripts doc](doc/scripts.md)
+[Scripts doc](scripts.md)
 
 ### Here's how to configure terminator
 
@@ -24,4 +24,4 @@ cp /tmp/Dotfiles/data/terminator/config ~/.config/terminator/config
 
 ## Next doc
 
-Now it's time to check [system doc](doc/system.md)
+Now it's time to check [system doc](system.md)

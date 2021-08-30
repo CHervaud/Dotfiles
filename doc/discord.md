@@ -10,9 +10,9 @@ Connect to discord
 Create shortcuts:
 - `Enable/Disable Mic` > F16 (Pause)
 - `Enable/Disable Mute` > F15 (Stop)
-![Discord settings](doc/img/discord_settings.png)
-![Discord shortcuts](doc/img/discord_shortcuts.png)
-![Discord new shortcut](doc/img/discord_add-new.png)
+![Discord settings](img/discord_settings.png)
+![Discord shortcuts](img/discord_shortcuts.png)
+![Discord new shortcut](img/discord_add-new.png)
 
 Install betterdiscord:
 ```

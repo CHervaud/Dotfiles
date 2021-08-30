@@ -4,7 +4,7 @@ This is my litle repository for my dotfiles, feel free to use my configuration !
 
 ## Use
 
-To use this repository, their is some documentation [here](doc/)
+To use this repository, their is some documentation [here](doc/softwares_installations.md)
 
 So just read it, and you will know all you need to know to setup your device
 

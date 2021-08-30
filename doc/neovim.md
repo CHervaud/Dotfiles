@@ -3,7 +3,7 @@
 #### What is done by scripts ?
 All of this section
 
-[Scripts doc](doc/scripts.md)
+[Scripts doc](scripts.md)
 
 ### Configure basic neovim
 
@@ -50,4 +50,4 @@ And type `:call mkdp#util#install()`
 
 ## Next doc
 
-Now it's time to check [git doc](doc/git.md)
+Now it's time to check [git doc](git.md)

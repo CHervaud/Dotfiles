@@ -3,7 +3,7 @@
 #### What is done by scripts ?
 Setup of the service
 
-[Scripts doc](doc/scripts.md)
+[Scripts doc](scripts.md)
 #### What is not done by scripts ?
 Create shortcuts
 
@@ -32,10 +32,10 @@ libinput-gestures-setup start
 ### Create shortcuts
 
 Launch `Gestures`
-![Launch Gestures](doc/img/gestures_launch.png)
+![Launch Gestures](img/gestures_launch.png)
 
 Add new gesture:
-![New gesture](doc/img/gestures_add-new.png)
+![New gesture](img/gestures_add-new.png)
 
 Then add this shortcuts with `Swipe`, `Three fingers`:
 - Up: `xdotool key Ctrl+Alt+Up`
@@ -50,4 +50,4 @@ reboot now
 
 ## Next doc
 
-Now it's time to check [discord doc](doc/discord.md)
+Now it's time to check [discord doc](discord.md)
