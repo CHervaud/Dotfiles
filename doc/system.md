@@ -6,7 +6,7 @@ None of this section
 ### Enable touchpad clicktouch
 
 Launch `Mouse and Touchpad`
-![Mouse and touchpad](img/system_mouse-and-touchpad.png)
+<img align="left" src="img/system_mouse-and-touchpad.png">
 
 Select the Touchpad in the devices list
 ![Touchpad in devices list](img/system_touchpad-in-list.png)
