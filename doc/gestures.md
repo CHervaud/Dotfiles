@@ -32,9 +32,11 @@ libinput-gestures-setup start
 ### Create shortcuts
 
 Launch `Gestures`
+
 ![Launch Gestures](img/gestures_launch.png)
 
-Add new gesture:
+Add new shortcuts:
+
 ![New gesture](img/gestures_add-new.png)
 
 Then add this shortcuts with `Swipe`, `Three fingers`:

@@ -7,7 +7,7 @@ All of this section
 
 ### Configure basic neovim
 
-Fisrt of all, clone this repository if it's not already done, here is an example:
+First of all, clone this repository if it's not already done, here is an example:
 ```
 git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles
 ```
@@ -44,9 +44,9 @@ Launch neovim:
 ```
 nvim
 ```
-Type `:PlugInstall`
+Type `:PlugInstall` to install all the plugins
 
-And type `:call mkdp#util#install()`
+And type `:call mkdp#util#install()` to install markdown preview
 
 ## Next doc
 

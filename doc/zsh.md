@@ -7,7 +7,7 @@ All of this section
 
 ### Configure zshrc
 
-Fisrt of all, clone this repository if it's not already done, here is an example:
+First of all, clone this repository if it's not already done, here is an example:
 ```
 git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles
 ```

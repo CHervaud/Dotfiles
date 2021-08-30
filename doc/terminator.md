@@ -7,7 +7,7 @@ All of this section
 
 ### Here's how to configure terminator
 
-Fisrt of all, clone this repository, here is an example:
+First of all, clone this repository, here is an example:
 ```
 git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles
 ```
