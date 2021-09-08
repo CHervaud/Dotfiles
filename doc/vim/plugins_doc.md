@@ -28,3 +28,4 @@ Some links for vim plugins documentations
 |Vim CSS color        |[doc](plugins/vim-css-color.md)        |[website](https://github.com/ap/vim-css-color)              |
 |Markdown preview     |[doc](plugins/markdown-preview.md)     |[website](https://github.com/iamcco/markdown-preview.nvim)  |
 |Tabnine              |[doc](plugins/tabnine.md)              |[website](https://github.com/codota/tabnine-vim)            |
+|NerdCommenter        |[doc](plugins/nerdcommenter.md)        |[website](https://github.com/preservim/nerdcommenter)       |

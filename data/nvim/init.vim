@@ -48,5 +48,6 @@ source $HOME/.config/nvim/plugs-set/indentline.vim
 source $HOME/.config/nvim/plugs-set/rainbow.vim
 source $HOME/.config/nvim/plugs-set/tree.vim
 source $HOME/.config/nvim/plugs-set/vimspector.vim
+source $HOME/.config/nvim/plugs-set/nerdcommenter.vim
 
 source $HOME/.config/nvim/keybindings/map.vim
