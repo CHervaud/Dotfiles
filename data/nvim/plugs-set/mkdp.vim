@@ -8,7 +8,7 @@ let g:mkdp_auto_close = 1
 let g:mkdp_refresh_slow = 1
 
 " Change preview page title
-let g:mkdp_page_title = 'Vim Markdown Preview'
+let g:mkdp_page_title = '「${name}」Vim mkdp'
 
 " Recognized filetypes
 let g:mkdp_filetypes = ['markdown', 'md']

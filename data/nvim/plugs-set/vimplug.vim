@@ -4,7 +4,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Nero-F/vim-tek-header'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
-Plug 'joshdick/onedark.vim'
 Plug 'tpope/vim-surround'
 Plug 'psliwka/vim-smoothie'
 Plug 'AndrewRadev/tagalong.vim'
@@ -23,5 +22,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'codota/tabnine-vim'
+Plug 'wsdjeg/vim-todo'
 
 call plug#end()

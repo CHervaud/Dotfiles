@@ -20,7 +20,6 @@ set number                                      " Display lines number
 set nu rnu                                      " Make lines number display relative
 
 " Color theme
-set background=dark
 colorscheme onedark
 
 " Tab
@@ -45,6 +44,7 @@ source $HOME/.config/nvim/plugs-set/gitgutter.vim
 source $HOME/.config/nvim/plugs-set/gitmessenger.vim
 source $HOME/.config/nvim/plugs-set/mkdp.vim
 source $HOME/.config/nvim/plugs-set/nerdtree.vim
+source $HOME/.config/nvim/plugs-set/indentline.vim
 source $HOME/.config/nvim/plugs-set/rainbow.vim
 source $HOME/.config/nvim/plugs-set/tree.vim
 source $HOME/.config/nvim/plugs-set/vimspector.vim
