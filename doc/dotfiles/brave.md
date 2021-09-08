@@ -1,6 +1,7 @@
 # Brave configuration
 
 #### What is done by scripts ?
+
 None of this section
 
 ### How to configure brave

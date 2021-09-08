@@ -1,6 +1,7 @@
 # System configuration
 
 #### What is done by scripts ?
+
 None of this section
 
 ### Enable touchpad clicktouch
@@ -56,7 +57,8 @@ Add this shortcuts:
 ### Enable pacman colored output
 
 Open `/etc/pacman.conf`:
-```
+
+```bash
 sudo vim /etc/pacman.conf
 ```
 

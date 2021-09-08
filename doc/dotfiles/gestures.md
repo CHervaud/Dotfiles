@@ -1,31 +1,38 @@
 # Gestures configuration
 
 #### What is done by scripts ?
+
 Setup of the service
 
 [Scripts doc](scripts.md)
+
 #### What is not done by scripts ?
+
 Create shortcuts
 
 ### Setup service
 
 Add user to input group:
-```
+
+```bash
 sudo gpasswd -a $USER input
 ```
 
 Setup systemd service:
-```
+
+```bash
 libinput-gestures-setup service
 ```
 
 Enable service autostart:
-```
+
+```bash
 libinput-gestures-setup autostart
 ```
 
 Start service:
-```
+
+```bash
 libinput-gestures-setup start
 ```
 
@@ -40,13 +47,15 @@ Add new shortcuts:
 ![New gesture](img/gestures_add-new.png)
 
 Then add this shortcuts with `Swipe`, `Three fingers`:
+
 - Up: `xdotool key Ctrl+Alt+Up`
 - Down: `xdotool key Ctrl+Alt+Down`
 - Left: `xdotool key Ctrl+Alt+Left`
 - Right: `xdotool key Ctrl+Alt+Right`
 
 Reboot:
-```
+
+```bash
 reboot now
 ```
 

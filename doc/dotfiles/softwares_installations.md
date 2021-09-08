@@ -1,6 +1,7 @@
 # Softwares installations
 
 #### What is done by scripts ?
+
 All of this section
 
 [Scipts doc](scripts.md)
@@ -29,6 +30,7 @@ All of this section
 ### And how to install it
 
 #### Pacman installations
+
 - brave
 - python3
 - git
@@ -47,7 +49,8 @@ All of this section
 - pinta, krita
 
 With this command:
-```
+
+```bash
 sudo pacman -S brave python3 git vim neovim xclip terminator zsh obs-studio discord nodejs docker docker-compose gestures libinput-gestures gcc clang gcovr pinta krita
 ```
 
@@ -57,11 +60,14 @@ sudo pacman -S brave python3 git vim neovim xclip terminator zsh obs-studio disc
 - neovim python support
 
 Install pip:
-```
+
+```bash
 python -m ensurepip --upgrade; /usr/bin/python -m pip install --upgrade pip
 ```
+
 Then install pip packages:
-```
+
+```bash
 pip3 install compiledb pynvim
 ```
 
@@ -73,6 +79,7 @@ pip3 install compiledb pynvim
 - norminette
 
 See github repositories for install informations:
+
 - [paru github repository](https://github.com/Morganamilo/paru)
 - [vimplug github repository](https://github.com/junegunn/vim-plug)
 - [ohmyzsh github repository](https://github.com/ohmyzsh/ohmyzsh)
@@ -86,7 +93,8 @@ See github repositories for install informations:
 - betterdiscord
 
 With this commands:
-```
+
+```bash
 paru teams; paru criterion; paru deezer; paru betterdiscord
 ```
 

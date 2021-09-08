@@ -1,35 +1,42 @@
 # Git configuration
 
 #### What is done by scripts ?
+
 Local git configuration
 
 New ssh key generation
 
 [Scripts doc](scripts.md)
+
 #### What is not done by scripts ?
+
 Github and gitlab ssh key linkage
 
 ### Configure git
 
 Configure commit profile name:
-```
+
+```bash
 git config --global user.name "Corentin Hervaud"
 ```
 
 Configure commit profile mail:
-```
+
+```bash
 git config --global user.email "corentin.hervaud@epitech.eu"
 ```
 
 ### Create ssh key
 
 Generate a new ssh key (you can change the `-C`):
-```
+
+```bash
 ssh-keygen -t ed25519 -C "chervaud@hp_manjaro"
 ```
 
 Add ssh key to ssh-agent:
-```
+
+```bash
 ssh-add ~/.ssh/id_ed25519
 ```
 

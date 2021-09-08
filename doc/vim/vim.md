@@ -1,4 +1,4 @@
-## Hi there !
+# Hi there !
 
 #### You're new to vim ? No problem ! I will help you
 
@@ -9,17 +9,23 @@ If you don't have vim already, just install it with your distribution packages m
 Some examples:
 
 Arch-based linux:
-```
+
+```bash
 pacman -S vim
 ```
+
 Ubuntu like linux:
-```
+
+```bash
 apt-get install vim
 ```
+
 Redhat linux:
-```
+
+```bash
 dnf install vim
 ```
+
 Then type `vimtutor` in a terminal
 
 ##### Once you have all vim bascis in head, we can speak of what vim really is :O
@@ -43,6 +49,7 @@ So, if you use this as a secondary text editor, it's not really usefull to pimp 
 But, if you often use vim or use it as a main IDE, you will need to upgrade it a bit.
 
 ---
+
 ### Start pimping your vim
 
 So to start, take a look at the vim script documentation (https://devhints.io/vimscript) to globally understand how it works.
@@ -76,7 +83,6 @@ Either on vim or nvim, this file is the main config file that vim will call ever
 |`nocp`                   |                                                         |Disable vim insystem copy                        |                             `set nocp`|
 |`number`<br/>`nu`        |                                                         |Display lines number                             |              `set number`<br/>`set nu`|
 |`number rnu`<br/>`nu rnu`|                                                         |Display lines number relatively                  |      `set number rnu`<br/>`set nu rnu`|
-|`background`             |Theme                                                    |Set the background theme                         |                  `set background=dark`|
 |`colorscheme`            |Theme                                                    |Set the color theme                              |                  `colorscheme onedark`|
 |`ts sw`                  |Number                                                   |Number of space of a tab                         |                        `set ts=4 sw=4`|
 |`expandtab`              |                                                         |Make tab write the correct number of space       |                        `set expandtab`|
@@ -167,18 +173,24 @@ In vim you can 'map' a combination of keys to a command and plugins use commands
 So, you can map a combination of keys to tell a plugin to do something
 
 The syntax to map a combination of keys to a command
-```
+
+```vim
 :(map, nmap, inoremap...) (keys combination) (command)
 ```
+
 Example:
-```
+
+```vim
 inoremap kj <Esc>
 ```
+
 This say to vim that, when you press the keys `k` then `j` in insert mode('i'), to act like if you pressed the escape key
-```
+
+```vim
 :nmap dd :wq
 ```
-This one say to vim to type `:GitPush` command when you press the key `d` two times
+
+This one say to vim to type `:wq` command when you press the key `d` two times in normal mode
 
 This is how to do your own mapping
 
@@ -197,18 +209,22 @@ Leader allow you to use whatever keys combination without conflicting with basic
 What really does leader is just add a key before your shortcut
 
 So to use leader in a mapping, here is the syntax
-```
+
+```vim
 :nmap <leader>dd :wq
 ```
+
 Now what you have to do to use your mapping is to type this keys combination: `leader` + `d` + `d`
 
 But leader is not defined by default :), you need to define it, here is how (personnaly I use the `,` key as leader)
-```
+
+```vim
 let mapleader="<leader>"
 mine:
 let mapleader=","
 ```
-Just write this in somewhere in your configuration
+
+Just write this somewhere in your configuration
 
 #### Organize your configuration
 
@@ -217,13 +233,15 @@ If their is one last thing I can say you is to organize your vim configuration, 
 Personnaly, I write vim basic configuration in the basic vim configuration file and I include from here other configurations (mainly plugins configuration or keybindings)
 
 Here how to do an include
-```
+
+```vim
 source <path>
 ```
 
 My configuration architecture look like this:
 
 [ .config/nvim/ ]
+
 - init.vim
 
   [ keybindings/ ]
@@ -235,7 +253,8 @@ My configuration architecture look like this:
   - ...
 
 So in my basic config file (init.vim) I have
-```
+
+```vim
 # My config
 
 source $HOME/.config/nvim/keybindings/map.vim
