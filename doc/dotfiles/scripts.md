@@ -2,7 +2,7 @@
 
 ## Installations scripts
 
-[Scripts](../script/install/install_all.sh) install all the things you need
+[Scripts](../../script/install/install_all.sh) install all the things you need
 
 ## Configurations scripts
 
