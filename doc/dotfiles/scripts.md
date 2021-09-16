@@ -14,7 +14,7 @@ Here is what configuration scripts do or not:
 |System    |        Nothing         |                     All                     |  [here](system.md)  |
 |Brave     |        Nothing         |                     All                     |   [here](brave.md)  |
 |Zsh       |          All           |                   Nothing                   |    [here](zsh.md)   |
-|Neovim    |          All           |                   Nothing                   |  [here](neovim.md)  |
+|Neovim    |       Clonning         |               Vimplug install               |  [here](neovim.md)  |
 |Git       |- New ssh key generation|- Github ssh linkage<br/>- Gitlab ssh linkage|    [here](git.md)   |
 |Docker    |          All           |                   Nothing                   |  [here](docker.md)  |
 |Gestures  | - Setup of the service |              - Create shortcut              | [here](gestures.md) |

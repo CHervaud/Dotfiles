@@ -2,7 +2,11 @@
 
 #### What is done by scripts ?
 
-All of this section
+Clone all the files
+
+#### What is not done by scripts ?
+
+Install plugins with vimplug
 
 [Scripts doc](scripts.md)
 
