@@ -46,7 +46,6 @@ source $HOME/.config/nvim/plugs-set/mkdp.vim
 source $HOME/.config/nvim/plugs-set/nerdtree.vim
 source $HOME/.config/nvim/plugs-set/indentline.vim
 source $HOME/.config/nvim/plugs-set/rainbow.vim
-source $HOME/.config/nvim/plugs-set/tree.vim
 source $HOME/.config/nvim/plugs-set/vimspector.vim
 source $HOME/.config/nvim/plugs-set/nerdcommenter.vim
 
