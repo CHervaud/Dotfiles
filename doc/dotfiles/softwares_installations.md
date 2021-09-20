@@ -26,6 +26,7 @@ All of this section
 - criterion, gcovr
 - norminette
 - pinta, krita
+- tree
 
 ### And how to install it
 
@@ -47,11 +48,12 @@ All of this section
 - gcc, clangd
 - gcovr
 - pinta, krita
+- tree
 
 With this command:
 
 ```bash
-sudo pacman -S brave python3 git vim neovim xclip terminator zsh obs-studio discord nodejs docker docker-compose gestures libinput-gestures gcc clang gcovr pinta krita
+sudo pacman -S brave python3 git vim neovim xclip terminator zsh obs-studio discord nodejs docker docker-compose gestures libinput-gestures gcc clang gcovr pinta krita tree
 ```
 
 #### Pip installations

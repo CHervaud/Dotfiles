@@ -66,6 +66,20 @@ Uncomment the line `Color`
 
 ![Uncomment color line](img/system_pacman-color.png)
 
+### Enable system date synchronization
+
+Enable system date sync
+
+```bash
+timedatectl set_ntp true
+```
+
+Restart systemd timesync service
+
+```bash
+systemctl restart systemd-timesyncd.service
+```
+
 ## Next doc
 
 Now it's time to check [brave doc](brave.md)

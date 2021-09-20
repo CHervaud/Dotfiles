@@ -21,7 +21,7 @@ function check_error {
 
 # Install pacman packages
 echo -e "\033[1m\033[96mInstalling Pacman packages...\033[0m\033[93m"
-sudo pacman -S --noconfirm brave python3 git vim neovim xclip terminator zsh obs-studio discord nodejs docker docker-compose gestures libinput-gestures gcc clang gcovr pinta krita >> /dev/null
+sudo pacman -S --noconfirm brave python3 git vim neovim xclip terminator zsh obs-studio discord nodejs docker docker-compose gestures libinput-gestures gcc clang gcovr pinta krita tree >> /dev/null
 check_error $? "Pacman packages"
 
 # Install pip

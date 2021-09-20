@@ -110,6 +110,13 @@ libinput-gestures-setup autostart >> /dev/null
 ret_code=$((ret_code + $?))
 check_error $ret_code "Gestures"
 
+# Config system date sync
+timedatectl set_ntp true
+ret_code=$?
+systemctl restart systemd-timesyncd
+ret_code=$((ret_code + $?))
+check_error $ret_code "Timesync"
+
 echo -e "\033[92mInstallation complete ! \033[1mDon't forget to remove the line you added in 'sudo visudo' if you did\033[0m"
 echo -e "\n\033[95mYou now need to configure:"
 echo -e "  - system settings (see system.md)"

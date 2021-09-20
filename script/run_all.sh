@@ -32,7 +32,7 @@ function check_error_config {
 
 # Install pacman packages
 echo -e "\033[1m\033[96mInstalling Pacman packages...\033[0m\033[93m"
-sudo pacman -S --noconfirm brave python3 git vim neovim xclip terminator zsh obs-studio discord nodejs docker docker-compose gestures libinput-gestures gcc clang gcovr pinta krita >> /dev/null
+sudo pacman -S --noconfirm brave python3 git vim neovim xclip terminator zsh obs-studio discord nodejs docker docker-compose gestures libinput-gestures gcc clang gcovr pinta krita tree >> /dev/null
 check_error $? "Pacman packages"
 
 # Install pip
@@ -194,6 +194,13 @@ ret_code=$((ret_code + $?))
 libinput-gestures-setup autostart >> /dev/null
 ret_code=$((ret_code + $?))
 check_error_config $ret_code "Gestures"
+
+# Config system date sync
+timedatectl set_ntp true
+ret_code=$?
+systemctl restart systemd-timesyncd
+ret_code=$((ret_code + $?))
+check_error $ret_code "Timesync"
 
 echo -e "\033[92mInstallation complete ! \033[1mDon't forget to remove the line you added in 'sudo visudo' if you did\033[0m"
 echo -e "\n\033[95mYou now need to configure:"

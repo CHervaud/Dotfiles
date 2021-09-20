@@ -13,14 +13,19 @@ function check_error {
         exit 1
     fi
     if [ $1 -eq 0 ]; then
-        echo -e "\n\033[1m\033[92m$2 successfully installed\033[0m"
+        echo -e "\n\033[1m\033[92m$2 successfully configured\033[0m"
     else
-        echo -e "\n\033[1m\033[91m/!\\ Warning: Failed to install $2 !\033[0m" 1>&2
+        echo -e "\n\033[1m\033[91m/!\\ Warning: Failed to configure $2 !\033[0m" 1>&2
         exit 1
     fi
 }
 
-# Install pacman packages
-echo -e "\033[1m\033[96mInstalling Pacman packages...\033[0m\n"
-sudo pacman -S --noconfirm brave python3 git vim neovim xclip terminator zsh obs-studio discord nodejs docker docker-compose gestures libinput-gestures gcc clang gcovr pinta krita tree
-check_error $? "Pacman packages"
+# Enable system sync date
+echo -e "\033[1m\033[96mEnable system date sync...\033[0m\n"
+timedatectl set_ntp true
+check_error $? "System time sync"
+
+# Restarting systemd timesync
+echo -e "\033[1m\033[96mRestarting systemd timesync service...\033[0m\n"
+systemctl restart systemd-timesyncd
+check_error $? "Restart systemd timesync"
