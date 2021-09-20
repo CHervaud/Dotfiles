@@ -12,6 +12,3 @@ let g:mkdp_page_title = '「${name}」Vim mkdp'
 
 " Recognized filetypes
 let g:mkdp_filetypes = ['markdown', 'md']
-
-" Open/Close Markdown Preview
-nmap <C-p> :MarkdownPreviewToggle<CR>

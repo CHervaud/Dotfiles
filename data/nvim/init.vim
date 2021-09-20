@@ -40,7 +40,6 @@ source $HOME/.config/nvim/plugs-set/coc.vim
 source $HOME/.config/nvim/plugs-set/airline.vim
 source $HOME/.config/nvim/plugs-set/arduino.vim
 source $HOME/.config/nvim/plugs-set/better_whitespace.vim
-source $HOME/.config/nvim/plugs-set/gitgutter.vim
 source $HOME/.config/nvim/plugs-set/gitmessenger.vim
 source $HOME/.config/nvim/plugs-set/mkdp.vim
 source $HOME/.config/nvim/plugs-set/nerdtree.vim

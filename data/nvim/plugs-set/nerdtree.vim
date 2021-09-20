@@ -1,6 +1,3 @@
-" Map Ctrl+n To display/hide NERDTree
-map <C-n> :NERDTreeToggle<CR>
-
 " Show hidden files
 let NERDTreeShowHidden=1
 
