@@ -1,8 +1,8 @@
 " Show hidden files
 let NERDTreeShowHidden=1
 
-" Ignore .git folder
-let NERDTreeIgnore=['\.git$', '\.vscode$', '.clangd$', 'compilecommands.json']
+" Ignore files and folders
+let NERDTreeIgnore=['\.git$', '\.vscode$', '\.clangd$', '\.cache$', 'compile_commands.json', '\.o$', '\.a$']
 
 " When open a directory, start tree automatically
 autocmd StdinReadPre * let s:std_in=1
