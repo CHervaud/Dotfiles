@@ -29,3 +29,4 @@ Some links for vim plugins documentations
 |Markdown preview     |[doc](plugins/markdown-preview.md)     |[website](https://github.com/iamcco/markdown-preview.nvim)  |
 |Tabnine              |[doc](plugins/tabnine.md)              |[website](https://github.com/codota/tabnine-vim)            |
 |NerdCommenter        |[doc](plugins/nerdcommenter.md)        |[website](https://github.com/preservim/nerdcommenter)       |
+|Vim Cmake            |[doc](plugins/vim-cmake.md)            |[website](https://github.com/cdelledonne/vim-cmake)         |

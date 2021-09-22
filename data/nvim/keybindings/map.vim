@@ -57,6 +57,22 @@ nmap <C-p> :MarkdownPreviewToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 
+" Cmake
+
+" Generate
+nmap <leader>cg :CMakeGenerate<CR>
+" Build
+nmap <leader>cb :CMakeBuild<CR>
+" Install
+nmap <leader>ci :CMakeInstall<CR>
+" Clean
+nmap <leader>cc :CMakeClean<CR>
+" Open window
+nmap <leader>co :CmakeOpen<CR>
+" Close window
+nmap <leader>cq :CMakeClose<CR>
+
+
 " CoC
 
 " Use `<leader>n` and `<leader>N` to navigate errors/warnings
