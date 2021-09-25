@@ -17,18 +17,24 @@ inoremap jK <Esc>
 inoremap Jk <Esc>
 inoremap Kj <Esc>
 inoremap kJ <Esc>
+nnoremap <C-j> <C-w>j
+nnoremap <C-h> <C-h>j
+nnoremap <C-k> <C-k>j
+nnoremap <C-l> <C-l>j
+nmap <C-s> :x<CR>
+imap <C-s> :x<CR>
 
 
 " Arduino
 
 " Compile ino code
-nnoremap <buffer> <leader>am :ArduinoVerify<CR>
+nnoremap <leader>am :ArduinoVerify<CR>
 " Upload binary to arduino
-nnoremap <buffer> <leader>au :ArduinoUpload<CR>
+nnoremap <leader>au :ArduinoUpload<CR>
 " Open console
-nnoremap <buffer> <leader>as :ArduinoSerial<CR>
+nnoremap <leader>as :ArduinoSerial<CR>
 " Upload binary to arduino and open console
-nnoremap <buffer> <leader>ad :ArduinoUploadAndSerial<CR>
+nnoremap <leader>ad :ArduinoUploadAndSerial<CR>
 
 
 " Git gutter
