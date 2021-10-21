@@ -146,6 +146,8 @@ alias mke="make"
 alias myvalgrind="valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all"
 alias Gupdate="sudo pacman -Sy; sudo pacman -Syu; sudo pacman -Syy; sudo pacman -Syyy"
 alias watchc="watch -c"
+alias pacmani="pacman -S --noconfirm"
+alias ad="sudo chmod a+rw /dev/ttyACM0"
 #alias ls="echo sleep 1 >> ~/.bashrc; ls"
 
 function gda {
