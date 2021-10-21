@@ -22,16 +22,30 @@ function check_error {
 
 # Config git
 echo -e "\033[1m\033[96mConfiguring git...\033[0m\n"
-git config --global user.name "Corentin Hervaud"
-ret_code=$?
-git config --global user.email "corentin.hervaud@epitech.eu"
-ret_code=$((ret_code + $?))
+if [ $1 -eq 1 ] ; then
+    git config --global user.name "Corentin Hervaud" >> /dev/null
+    ret_code=$?
+    git config --global user.email "corentin.hervaud@epitech.eu" /dev/null
+    ret_code=$((ret_code + $?))
+else
+    git config --global user.name "Corentin Hervaud"
+    ret_code=$?
+    git config --global user.email "corentin.hervaud@epitech.eu"
+    ret_code=$((ret_code + $?))
+fi
 check_error $ret_code "Git"
 
 # Config new ssh key
 echo -e "\033[1m\033[96mConfiguring new ssh key...\033[0m\n"
-ssh-keygen -t ed25519 -C "chervaud@hp_manjaro"
-ret_code=$?
-ssh-add $HOME/.ssh/id_ed25519
-ret_code=$((ret_code + $?))
+if [ $1 -eq 1 ] ; then
+    ssh-keygen -t ed25519 -C "chervaud@hp_manjaro" >> /dev/null
+    ret_code=$?
+    ssh-add $HOME/.ssh/id_ed25519 >> /dev/null
+    ret_code=$((ret_code + $?))
+else
+    ssh-keygen -t ed25519 -C "chervaud@hp_manjaro"
+    ret_code=$?
+    ssh-add $HOME/.ssh/id_ed25519
+    ret_code=$((ret_code + $?))
+fi
 check_error $ret_code "new ssh key"

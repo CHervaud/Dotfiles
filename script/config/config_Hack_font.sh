@@ -22,13 +22,27 @@ function check_error {
 
 # Cloning Dotfile repo
 echo -e "\033[1m\033[96mCloning Dotfile repository...\033[0m\n"
-git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles
+if [ $1 -eq 1 ] ; then
+    git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles &> /dev/null
+else
+    git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles
+fi
 check_error $? "Dotfile repository"
 
 # Config Hack font devicons
 echo -e "\033[1m\033[96mConfiguring Hack font for devicons...\033[0m\n"
-git clone https://github.com/ryanoasis/nerd-fonts.git /tmp/nerd-fonts
-ret_code=$?
-/tmp/nerd-fonts/./install.sh Hack
-ret_code=$((ret_code + $?))
+if [ $1 -eq 1 ] ; then
+    git clone https://github.com/ryanoasis/nerd-fonts.git /tmp/nerd-fonts &> /dev/null
+    ret_code=$?
+    /tmp/nerd-fonts/./install.sh Hack >> /dev/null
+    ret_code=$((ret_code + $?))
+else
+fi
+if [ $1 -eq 1 ] ; then
+    git clone https://github.com/ryanoasis/nerd-fonts.git /tmp/nerd-fonts
+    ret_code=$?
+    /tmp/nerd-fonts/./install.sh Hack
+    ret_code=$((ret_code + $?))
+else
+fi
 check_error $ret_code "Hack font for devicons"

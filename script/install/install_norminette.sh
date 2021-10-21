@@ -22,5 +22,9 @@ function check_error {
 
 # Install norminette
 echo -e "\033[1m\033[96mInstalling Bubulle norminette...\033[0m\n"
-curl -fsSL https://raw.githubusercontent.com/aureliancnx/Bubulle-Norminette/master/install_bubulle.sh
+if [ $1 -eq 1 ]; then
+    curl -fsSL https://raw.githubusercontent.com/aureliancnx/Bubulle-Norminette/master/install_bubulle.sh >> /dev/null
+else
+    curl -fsSL https://raw.githubusercontent.com/aureliancnx/Bubulle-Norminette/master/install_bubulle.sh
+fi
 check_error $? "Bubulle norminette"

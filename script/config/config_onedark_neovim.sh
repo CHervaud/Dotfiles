@@ -22,15 +22,28 @@ function check_error {
 
 # Cloning Dotfile repo
 echo -e "\033[1m\033[96mCloning Dotfile repository...\033[0m\n"
-git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles
+if [ $1 -eq 1 ] ; then
+    git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles &> /dev/null
+else
+    git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles
+fi
 check_error $? "Dotfile repository"
 
 # Config onedark neovim colorscheme
 echo -e "\033[1m\033[96mConfiguring Onedark neovim colorscheme...\033[0m\n"
-git clone https://github.com/joshdick/onedark.vim /tmp/onedark.vim
-ret_code=$?
-cp /tmp/onedark.vim/colors -r $HOME/.config/nvim/colors
-ret_code=$((ret_code + $?))
-cp /tmp/onedark.vim/autoload -r $HOME/.config/nvim/autoload
-ret_code=$((ret_code + $?))
+if [ $1 -eq 1 ] ; then
+    git clone https://github.com/joshdick/onedark.vim /tmp/onedark.vim &> /dev/null
+    ret_code=$?
+    cp /tmp/onedark.vim/colors -r $HOME/.config/nvim/colors >> /dev/null
+    ret_code=$((ret_code + $?))
+    cp /tmp/onedark.vim/autoload -r $HOME/.config/nvim/autoload >> /dev/null
+    ret_code=$((ret_code + $?))
+else
+    git clone https://github.com/joshdick/onedark.vim /tmp/onedark.vim
+    ret_code=$?
+    cp /tmp/onedark.vim/colors -r $HOME/.config/nvim/colors
+    ret_code=$((ret_code + $?))
+    cp /tmp/onedark.vim/autoload -r $HOME/.config/nvim/autoload
+    ret_code=$((ret_code + $?))
+fi
 check_error $ret_code "Onedark neovim colorscheme"

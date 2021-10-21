@@ -22,5 +22,9 @@ function check_error {
 
 # Install Microsoft Teams
 echo -e "\033[1m\033[96mInstalling Microsoft Teams...\033[0m\n"
-paru --skipreview teams <<< "1"
+if [ $1 -eq 1 ]; then
+    paru --skipreview teams <<< "1" >> /dev/null
+else
+    paru --skipreview teams <<< "1"
+fi
 check_error $? "Microsoft Teams"

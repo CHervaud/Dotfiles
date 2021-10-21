@@ -22,5 +22,9 @@ function check_error {
 
 # Install ohmyzsh
 echo -e "\033[1m\033[96mInstalling ohmyzsh...\033[0m\n"
-curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+if [ $1 -eq 1 ]; then
+    curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh >> /dev/null
+else
+    curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+fi
 check_error $? "ohmyzsh"

@@ -22,5 +22,9 @@ function check_error {
 
 # Install Criterion
 echo -e "\033[1m\033[96mInstalling criterion...\033[0m\n"
-paru --skipreview criterion <<< "1"
+if [ $1 -eq 1 ]; then
+    paru --skipreview criterion <<< "1" >> /dev/null
+else
+    paru --skipreview criterion <<< "1"
+fi
 check_error $? "criterion"

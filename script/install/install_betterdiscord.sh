@@ -22,8 +22,15 @@ function check_error {
 
 # Install Better Discord installer
 echo -e "\033[1m\033[96mInstalling Better Discord installer...\033[0m\n"
-paru --skipreview betterdiscord-installer <<< "1"
-ret_code=$?
-betterdiscord-installer
-ret_code=$((ret_code + $?))
+if [ $1 -eq 1 ]; then
+    paru --skipreview betterdiscord-installer <<< "1" >> /dev/null
+    ret_code=$?
+    betterdiscord-installer >> /dev/null
+    ret_code=$((ret_code + $?))
+else
+    paru --skipreview betterdiscord-installer <<< "1"
+    ret_code=$?
+    betterdiscord-installer
+    ret_code=$((ret_code + $?))
+fi
 check_error $ret_code "Better Discord installer"

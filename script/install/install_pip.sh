@@ -22,8 +22,15 @@ function check_error {
 
 # Install pip
 echo -e "\033[1m\033[96mInstalling pip...\033[0m\n"
-python -m ensurepip --upgrade
-ret_code=$?
-/usr/bin/python -m pip install --upgrade pip
-ret_code=$((ret_code + $?))
+if [ $1 -eq 1 ]; then
+    python -m ensurepip --upgrade >> /dev/null
+    ret_code=$?
+    /usr/bin/python -m pip install --upgrade pip >> /dev/null
+    ret_code=$((ret_code + $?))
+else
+    python -m ensurepip --upgrade
+    ret_code=$?
+    /usr/bin/python -m pip install --upgrade pip
+    ret_code=$((ret_code + $?))
+fi
 check_error $ret_code "pip"

@@ -20,17 +20,21 @@ function check_error {
     fi
 }
 
-# Cloning Dotfile repo
-echo -e "\033[1m\033[96mCloning Dotfile repository...\033[0m\n"
-git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles
-check_error $? "Dotfile repository"
-
 # Config Gestures
 echo -e "\033[1m\033[96mConfiguring Gestures...\033[0m\n"
-sudo gpasswd -a $USER input
-ret_code=$?
-libinput-gestures-setup service
-ret_code=$((ret_code + $?))
-libinput-gestures-setup autostart
-ret_code=$((ret_code + $?))
+if [ $1 -eq 1 ] ; then
+    sudo gpasswd -a $USER input >> /dev/null
+    ret_code=$?
+    libinput-gestures-setup service >> /dev/null
+    ret_code=$((ret_code + $?))
+    libinput-gestures-setup autostart >> /dev/null
+    ret_code=$((ret_code + $?))
+else
+    sudo gpasswd -a $USER input
+    ret_code=$?
+    libinput-gestures-setup service
+    ret_code=$((ret_code + $?))
+    libinput-gestures-setup autostart
+    ret_code=$((ret_code + $?))
+fi
 check_error $ret_code "Gestures"

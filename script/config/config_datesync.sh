@@ -22,10 +22,18 @@ function check_error {
 
 # Enable system sync date
 echo -e "\033[1m\033[96mEnable system date sync...\033[0m\n"
-timedatectl set_ntp true
+if [ $1 -eq 1 ] ; then
+    timedatectl set_ntp true >> /dev/null
+else
+    timedatectl set_ntp true
+fi
 check_error $? "System time sync"
 
 # Restarting systemd timesync
 echo -e "\033[1m\033[96mRestarting systemd timesync service...\033[0m\n"
-systemctl restart systemd-timesyncd
+if [ $1 -eq 1 ] ; then
+    systemctl restart systemd-timesyncd >> /dev/null
+else
+    systemctl restart systemd-timesyncd
+fi
 check_error $? "Restart systemd timesync"

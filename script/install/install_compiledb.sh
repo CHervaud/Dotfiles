@@ -22,5 +22,9 @@ function check_error {
 
 # Install compiledb
 echo -e "\033[1m\033[96mInstalling compiledb...\033[0m\n"
-pip3 install --no-input compiledb
+if [ $1 -eq 1 ]; then
+    pip3 install --no-input compiledb >> /dev/null
+else
+    pip3 install --no-input compiledb
+fi
 check_error $? "compiledb"

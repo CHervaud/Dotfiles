@@ -22,5 +22,9 @@ function check_error {
 
 # Install neovim python support
 echo -e "\033[1m\033[96mInstalling neovim python support...\033[0m\n"
-python3 -m pip install --user --upgrade pynvim
+if [ $1 -eq 1 ]; then
+    python3 -m pip install --user --upgrade pynvim >> /dev/null
+else
+    python3 -m pip install --user --upgrade pynvim
+fi
 check_error $? "neovim python support"

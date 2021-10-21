@@ -22,12 +22,23 @@ function check_error {
 
 # Install paru
 echo -e "\033[1m\033[96mInstalling paru...\033[0m\n"
-sudo pacman -S --noconfirm --needed base-devel
-ret_code=$?
-git clone https://aur.archlinux.org/paru.git $HOME/.paru
-ret_code=$((ret_code + $?))
-cd $HOME/.paru
-ret_code=$((ret_code + $?))
-makepkg -si &> /dev/null
-ret_code=$((ret_code + $?))
+if [ $1 -eq 1 ]; then
+    sudo pacman -S --noconfirm --needed base-devel >> /dev/null
+    ret_code=$?
+    git clone https://aur.archlinux.org/paru.git $HOME/.paru &> /dev/null
+    ret_code=$((ret_code + $?))
+    cd $HOME/.paru >> /dev/null
+    ret_code=$((ret_code + $?))
+    makepkg -si &> /dev/null
+    ret_code=$((ret_code + $?))
+else
+    sudo pacman -S --noconfirm --needed base-devel
+    ret_code=$?
+    git clone https://aur.archlinux.org/paru.git $HOME/.paru
+    ret_code=$((ret_code + $?))
+    cd $HOME/.paru
+    ret_code=$((ret_code + $?))
+    makepkg -si
+    ret_code=$((ret_code + $?))
+fi
 check_error $ret_code "paru"

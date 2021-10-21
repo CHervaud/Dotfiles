@@ -22,10 +22,18 @@ function check_error {
 
 # Cloning Dotfile repo
 echo -e "\033[1m\033[96mCloning Dotfile repository...\033[0m\n"
-git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles
+if [ $1 -eq 1 ] ; then
+    git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles &> /dev/null
+else
+    git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles
+fi
 check_error $? "Dotfile repository"
 
 # Config zshrc
 echo -e "\033[1m\033[96mConfiguring zshrc...\033[0m\n"
-cp /tmp/Dotfiles/data/zsh/zshrc $HOME/.zshrc
+if [ $1 -eq 1 ] ; then
+    cp /tmp/Dotfiles/data/zsh/zshrc $HOME/.zshrc >> /dev/null
+else
+    cp /tmp/Dotfiles/data/zsh/zshrc $HOME/.zshrc
+fi
 check_error $? "zshrc"

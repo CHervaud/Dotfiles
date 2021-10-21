@@ -20,17 +20,21 @@ function check_error {
     fi
 }
 
-# Cloning Dotfile repo
-echo -e "\033[1m\033[96mCloning Dotfile repository...\033[0m\n"
-git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles
-check_error $? "Dotfile repository"
-
 # Config docker
 echo -e "\033[1m\033[96mConfiguring Docker...\033[0m\n"
-sudo groupadd docker
-ret_code=$?
-sudo usermod -aG docker $USER
-ret_code=$((ret_code + $?))
-newgrp docker
-ret_code=$((ret_code + $))
+if [ $1 -eq 1 ] ; then
+    sudo groupadd docker >> /dev/null
+    ret_code=$?
+    sudo usermod -aG docker $USER >> /dev/null
+    ret_code=$((ret_code + $?))
+    newgrp docker >> /dev/null
+    ret_code=$((ret_code + $))
+else
+    sudo groupadd docker
+    ret_code=$?
+    sudo usermod -aG docker $USER
+    ret_code=$((ret_code + $?))
+    newgrp docker
+    ret_code=$((ret_code + $))
+fi
 check_error $ret_code "Docker"

@@ -22,5 +22,9 @@ function check_error {
 
 # Install Deezer
 echo -e "\033[1m\033[96mInstalling Deezer...\033[0m\n"
-paru --skipreview deezer <<< "1"
+if [ $1 -eq 1 ]; then
+    paru --skipreview deezer <<< "1" >> /dev/null
+else
+    paru --skipreview deezer <<< "1"
+fi
 check_error $? "Deezer"

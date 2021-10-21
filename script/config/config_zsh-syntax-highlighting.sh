@@ -20,12 +20,11 @@ function check_error {
     fi
 }
 
-# Cloning Dotfile repo
-echo -e "\033[1m\033[96mCloning Dotfile repository...\033[0m\n"
-git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles
-check_error $? "Dotfile repository"
-
 # Config zsh-syntax-highlighting zsh plugin
 echo -e "\033[1m\033[96mConfiguring zsh-syntax-highlighting zsh plugin...\033[0m\n"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+if [ $1 -eq 1 ] ; then
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting &> /dev/null
+else
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+fi
 check_error $? "zsh-syntax-highlighting plugin"
