@@ -104,4 +104,8 @@ Use Ctrl + W + (h j k l) to move of windows
 
 When are on the nerdtree window, you can select a file and press enter to open it
 
+You can also press `t` to open it in a new tab
+
+And press f to show/hide hidden files
+
 Also press `m` to see which interactions you can do with your environment
