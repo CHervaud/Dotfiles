@@ -91,6 +91,13 @@ if [ $ret_code -ne 0 ] ; then
     exit $ret_code
 fi
 
+# Config background image
+./config_background.sh
+ret_code=$?
+if [ $ret_code -ne 0 ] ; then
+    exit $ret_code
+fi
+
 echo -e "\033[92mInstallation complete ! \033[1mDon't forget to remove the line you added in 'sudo visudo' if you did\033[0m"
 echo -e "\n\033[95mYou now need to configure:"
 echo -e "  - system settings (see system.md)"

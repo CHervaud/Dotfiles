@@ -2,7 +2,13 @@
 
 #### What is done by scripts ?
 
-None of this section
+Date synchronization
+
+Background image set
+
+#### What is not done by scripts ?
+
+All the rest
 
 ### Enable touchpad clicktouch
 
@@ -31,6 +37,26 @@ Launch `Appearance`
 Select the theme you want (recommended: `Matcha-dark-sea`)
 
 ![Theme selection](img/system_theme.png)
+
+### Change backgrounds
+
+Right click on the monitor background you want to change
+
+![Right Click Desktop](img/system_right-click-desktop.png)
+
+Change the images source directory
+
+![Change source directory](img/system_change-background-source-directory.png)
+
+![Select background image](img/system_select-background-source-directory.png)
+
+Select the image you want to use as background (one can be found in this repository)
+
+![Select background image](img/system_select-background-image.png)
+
+Select the zoomed style and make sure `Apply to all workspaces` is checked
+
+![Background image options](img/system_background-image-options.png)
 
 ### Create shortcuts
 
@@ -79,6 +105,16 @@ Restart systemd timesync service
 ```bash
 systemctl restart systemd-timesyncd.service
 ```
+
+### Add workspaces
+
+Launch `Workspaces`
+
+![Workspaces](img/system_workspaces.png)
+
+Add or remove as many workspaces as you want
+
+![Add workspaces](img/system_add-workspaces.png)
 
 ## Next doc
 
