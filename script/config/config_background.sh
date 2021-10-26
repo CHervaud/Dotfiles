@@ -28,6 +28,14 @@ else
     git clone https://github.com/Curs3W4ll/Dotfiles.git /tmp/Dotfiles
 fi
 
+# Hiding icons from desktop
+echo -e "\033[1m\033[96mHiding icons from desktop...\033[0m\n"
+if [ $1 -eq 1 ] ; then
+    xfconf-query -c xfce4-desktop -p /desktop-icons/style -s 0 > /dev/null
+else
+    xfconf-query -c xfce4-desktop -p /desktop-icons/style -s 0
+fi
+
 # Copying background images
 echo -e "\033[1m\033[96mCopying background images...\033[0m\n"
 if [ $1 -eq 1 ] ; then

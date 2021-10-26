@@ -4,6 +4,8 @@
 
 Date synchronization
 
+Desktop icons hiding
+
 Background image set
 
 #### What is not done by scripts ?
@@ -57,6 +59,24 @@ Select the image you want to use as background (one can be found in this reposit
 Select the zoomed style and make sure `Apply to all workspaces` is checked
 
 ![Background image options](img/system_background-image-options.png)
+
+### Hide desktop icons
+
+Right click on the monitor background you want to change
+
+![Right Click Desktop](img/system_right-click-desktop.png)
+
+Click on sub section `Icons`
+
+![Icons sub section](img/system_icons-subsection.png)
+
+Click on `Icon type` select button
+
+![Icon type button](img/system_icon-type-button.png)
+
+Select `None`
+
+![Icon type none](img/system_icon-type-none.png)
 
 ### Create shortcuts
 
