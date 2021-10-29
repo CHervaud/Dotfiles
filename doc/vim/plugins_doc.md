@@ -30,3 +30,4 @@ Some links for vim plugins documentations
 |Tabnine              |[doc](plugins/tabnine.md)              |[website](https://github.com/codota/tabnine-vim)            |
 |NerdCommenter        |[doc](plugins/nerdcommenter.md)        |[website](https://github.com/preservim/nerdcommenter)       |
 |Vim Cmake            |[doc](plugins/vim-cmake.md)            |[website](https://github.com/cdelledonne/vim-cmake)         |
+|Instant nvim         |[doc](plugins/instant-nvim.md)         |[website](https://github.com/jbyuki/instant.nvim)           |

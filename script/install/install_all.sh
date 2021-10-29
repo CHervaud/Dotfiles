@@ -70,6 +70,13 @@ if [ $ret_code -ne 0 ] ; then
     exit $ret_code
 fi
 
+# Install ngork
+./install_ngork.sh 1
+ret_code=$?
+if [ $ret_code -ne 0 ] ; then
+    exit $ret_code
+fi
+
 # Install Criterion
 ./install_criterion.sh 1
 ret_code=$?

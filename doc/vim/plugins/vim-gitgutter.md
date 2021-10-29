@@ -4,7 +4,6 @@ More documentation here: [Gitgutter github](https://github.com/airblade/vim-gitg
 
 ## Overview
 
-Coc is a vim plugin that is used by almost all of the autocompletion plugins
 Gitgutter is a vim plugin that add a git support to vim
 
 You can see the differences between your project and the lastest version on the remote

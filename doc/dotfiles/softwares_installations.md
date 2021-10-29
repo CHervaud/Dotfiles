@@ -93,11 +93,12 @@ See github repositories for install informations:
 - criterion
 - deezer
 - betterdiscord
+- ngork
 
 With this commands:
 
 ```bash
-paru teams; paru criterion; paru deezer; paru betterdiscord
+paru teams; paru criterion; paru deezer; paru betterdiscord; paru ngork
 ```
 
 ## Next doc
