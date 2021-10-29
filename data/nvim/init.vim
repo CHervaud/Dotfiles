@@ -25,6 +25,7 @@ colorscheme onedark
 " Tab
 set ts=4 sw=4
 set expandtab
+autocmd FileType javascript setlocal ts=2 sw=2 expandtab " Tab of 2 for js files
 
 " Fold with 'zc' and 'zo'
 set foldmethod=indent
@@ -41,6 +42,7 @@ source $HOME/.config/nvim/plugs-set/airline.vim
 source $HOME/.config/nvim/plugs-set/arduino.vim
 source $HOME/.config/nvim/plugs-set/better_whitespace.vim
 source $HOME/.config/nvim/plugs-set/gitmessenger.vim
+source $HOME/.config/nvim/plugs-set/instant.vim
 source $HOME/.config/nvim/plugs-set/mkdp.vim
 source $HOME/.config/nvim/plugs-set/nerdtree.vim
 source $HOME/.config/nvim/plugs-set/indentline.vim

@@ -18,9 +18,9 @@ inoremap Jk <Esc>
 inoremap Kj <Esc>
 inoremap kJ <Esc>
 nnoremap <C-j> <C-w>j
-nnoremap <C-h> <C-h>j
-nnoremap <C-k> <C-k>j
-nnoremap <C-l> <C-l>j
+nnoremap <C-h> <C-w>h
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 nmap <C-s> :x<CR>
 imap <C-s> :x<CR>
 
@@ -91,17 +91,9 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Use K to show documentation in a preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
-
-" Use CTRL-S for selections ranges.
-" Requires 'textDocument/selectionRange' support of LS, ex: coc-tsserver
-nmap <silent> <C-s> <Plug>(coc-range-select)
-xmap <silent> <C-s> <Plug>(coc-range-select)
 
 " Mappings using CoCList:
 " Show all diagnostics.
