@@ -18,13 +18,11 @@ Go to `Settings/Repository`
 
 Expand `Mirroring repositories` section
 
-URL example: `https://XXXXXXXX@github.com/Curs3W4ll/test_gitlab.git`
+URL example: `https://Curs3W4ll@github.com/Curs3W4ll/test_gitlab.git`
 
 Password: `XXXXXXXX`
 
-Check `Keep divergents refs`
-
-Check `Mirror only protected branches`
+`As github disabled the possibility to login with a password, use an access token instead`
 
 Click `Mirror repository`
 
