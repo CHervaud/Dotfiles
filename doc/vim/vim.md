@@ -73,7 +73,7 @@ Either on vim or nvim, this file is the main config file that vim will call ever
 |-------------------------|:--------------------------------------------------------|-------------------------------------------------|--------------------------------------:|
 |`syntax`                 |`enable` / `disable`                                     |Enable or disable colors                         |                        `syntax enable`|
 |`wildignorecase`         |                                                         |Make filenames autocompletion case-insensitive   |                   `set wildignorecase`|
-|`wildignore`             |Can add with `+=`                                        |Ignore files from autocompletion                 |`set wildignore+=*.a,*.o,*.gcno,*.gcda`|
+|`wildignore`             |Can add with `+=`                                        |Ignore files from filenames autocompletion       |`set wildignore+=*.a,*.o,*.gcno,*.gcda`|
 |`t_Co`                   |Bit colors                                               |Set your terminal bit colors                     |                         `set t_Co=256`|
 |`autowriteall`           |                                                         |Save files automatically when you quit vim (`:q`)|                     `set autowriteall`|
 |`ignorecase`             |                                                         |Make search case-insensitive                     |                       `set ignorecase`|
@@ -127,6 +127,9 @@ Here are some plugins I use:
 - [vim-css-color](https://github.com/ap/vim-css-color)
 - [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
 - [tabnine](https://github.com/codota/tabnine-vim)
+- [NerdCommenter](https://github.com/preservim/nerdcommenter)
+- [Vim](https://github.com/cdelledonne/vim-cmake)
+- [Instant](https://github.com/jbyuki/instant.nvim)
 
 I've made some documentation on this plugins [here](plugins_doc.md)
 

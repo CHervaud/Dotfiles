@@ -22,7 +22,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nmap <C-s> :x<CR>
-imap <C-s> :x<CR>
+imap <C-s> <Esc>:x<CR>
 
 
 " Arduino
