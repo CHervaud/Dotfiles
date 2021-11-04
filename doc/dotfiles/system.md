@@ -136,6 +136,86 @@ Add or remove as many workspaces as you want
 
 ![Add workspaces](img/system_add-workspaces.png)
 
+### Change theme
+
+Install your theme(example: `la-capitaine`)
+
+```bash
+paru la-capitaine
+```
+
+Change it in your settings
+
+Launch `Appearance`
+
+![Appearance](img/system_appearance.png)
+
+Click on `Icons` subtab
+
+![Icons subtab selection](img/system_icon-subtab.png)
+
+Select `La Capitaine`
+
+![Icons theme selection](img/system_icon-theme-selection.png)
+
+### Install plank TabBar
+
+Plank is a nice tabbar
+
+Install Plank
+
+```bash
+paru plank
+```
+
+Add it in the autostart applications
+
+Launch `Session and Startup`
+
+![Session and Startup](img/system_session-and-startup.png)
+
+Click on `Application Autostart`
+
+![Application Autostart](img/system_application-autostart.png)
+
+Click on the 'Plus'
+
+![Add autostart application](img/system_add-application-autostart.png)
+
+Fill like following
+
+![Fill application autostart](img/system_add-application-autostart-fill.png)
+
+Disable dock windows shadows
+
+Launch `Window Manager Tweaks`
+
+![Window Manager Tweaks](img/system_window-manager-tweaks.png)
+
+Click on `Compositor` subtab
+
+![Compositor subtab](img/system_compositor-subtab.png)
+
+Uncheck `Show shadows under dock windows`
+
+![Uncheck shadows](img/system_uncheck-shadows.png)
+
+### Custom panel bar
+
+Move panel bar to the top
+
+Open panel bar preferences by rightclikcing it
+
+![Panel preferences](img/system_panel-preferences.png)
+
+Click on `Items` subtab
+
+![Items subtab](img/system_items-subtab.png)
+
+Organize items as following
+
+![Items list](img/system_panel-items.png)
+
 ## Next doc
 
 Now it's time to check [brave doc](brave.md)
