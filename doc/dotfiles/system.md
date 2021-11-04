@@ -112,6 +112,20 @@ Uncomment the line `Color`
 
 ![Uncomment color line](img/system_pacman-color.png)
 
+### Config paru
+
+Open `/etc/paru.conf`:
+
+```bash
+sudo vim /etc/paru.conf
+```
+
+Uncomment the line `BottomUp`
+
+Uncomment the line `Sudoloop`
+
+Uncomment the line `UseAsk`
+
 ### Enable system date synchronization
 
 Enable system date sync
