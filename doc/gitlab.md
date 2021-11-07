@@ -26,6 +26,43 @@ Password: `XXXXXXXX`
 
 Click `Mirror repository`
 
+### CI job to detect if mirroring failed
+
+Create a `.gitlab-ci.yml` file that should contain this
+
+```yml
+---
+
+stages:
+  - mirroring
+
+mirroring:
+  stage: mirroring
+  image: debian:latest
+  script:
+    - apt-get upgrade -y && apt-get update -y && apt-get install -y git
+    - git clone https://github.com/your-repository github
+    - git clone https://gitlab.com/your-repository gitlab
+    - cd gitlab
+    - git switch master
+    - git reset --hard master@{"10 minutes ago"}
+    - rm -rf .git
+    - cd ../github
+    - git switch master
+    - git reset --hard master@{"10 minutes ago"}
+    - rm -rf .git
+    - cd ..
+    - diff -r gitlab github
+  only:
+    - master
+
+...
+```
+
+Use project variables if needed (Set them in Settings/CI/CD/Variables)
+
+You can even use files for ssh
+
 ### Protect main branche
 
 Go to `Settings/Repository`
