@@ -22,6 +22,12 @@ In vim plug plugins call
 Plug 'codota/tabnine-vim'
 ```
 
+And in vim execute the following command:
+
+```vim
+:CocInstall coc-tabnine
+```
+
 ## Use
 
 To use this plugin, simply type some code/text, and you will see some 'popups' with tabnine suggestions
