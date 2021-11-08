@@ -14,6 +14,15 @@ In vim plug plugins call
 Plug 'ntpeters/vim-better-whitespace'
 ```
 
+## Configuration
+
+Add this (you can change the colors if you want to) in your config file:
+
+```vim
+let g:better_whitespace_ctermcolor='Red'
+let g:better_whitespace_guicolor='#E06C75'
+```
+
 ## Use
 
 To use this plugin, simply use vim
