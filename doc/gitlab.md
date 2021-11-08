@@ -63,7 +63,7 @@ Use project variables if needed (Set them in Settings/CI/CD/Variables)
 
 You can even use files for ssh
 
-### Protect main branche
+### Protect main branch
 
 Go to `Settings/Repository`
 
