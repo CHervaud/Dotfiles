@@ -1,6 +1,3 @@
-" Open the preview window after entering the markdown buffer
-let g:mkdp_auto_start = 1
-
 " Auto close current preview window when change
 let g:mkdp_auto_close = 1
 

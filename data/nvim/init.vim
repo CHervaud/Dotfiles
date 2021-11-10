@@ -33,6 +33,13 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=2
 
+" Keep undo history across sessions, by storing in file.
+set undofile
+if (!isdirectory("/tmp/undodir"))
+  !mkdir /tmp/undodir
+endif
+set undodir=/tmp/undodir
+
 
 source $HOME/.config/nvim/plugs-set/vimplug.vim
 

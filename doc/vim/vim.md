@@ -90,6 +90,8 @@ Either on vim or nvim, this file is the main config file that vim will call ever
 |`foldnestmax`            |Number                                                   |Folds limit number                               |                   `set foldnestmax=10`|
 |`nofoldenable`           |                                                         |Open all folds                                   |                     `set nofoldenable`|
 |`foldlevel`              |Number                                                   |Fold level                                       |                      `set foldlevel=2`|
+|`undofile`               |                                                         |Add the support of an undo directory             |                         `set undofile`|
+|`undodir`                |Path                                                     |Specify an undo directory                        |             `set undodir=/tmp/undodir`|
 
 There is a so many configuration for vim, just search what you want on internet, you will find it
 
