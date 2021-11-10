@@ -36,7 +36,7 @@ set foldlevel=2
 " Keep undo history across sessions, by storing in file.
 set undofile
 if (!isdirectory("/tmp/undodir"))
-  !mkdir /tmp/undodir
+  silent !mkdir /tmp/undodir
 endif
 set undodir=/tmp/undodir
 
