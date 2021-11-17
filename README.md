@@ -1,6 +1,6 @@
 # Dotfiles
 
-This is my litle repository for my dotfiles, feel free to use my configuration !
+This is my little repository for my dotfiles, feel free to use my configuration !
 
 ## Use
 
