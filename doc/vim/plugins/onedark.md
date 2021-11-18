@@ -12,8 +12,8 @@ Their is a lot of other plugins compatibility with this theme
 
 From the [onedark repository](https://github.com/joshdick/onedark.vim)
 
-- Copy `colors/*` to `~/.config/colors/`
-- Copy `autoload/*`  to `~/.config/autoload/`
+- Copy `colors/*` to `~/.config/nvim/colors/`
+- Copy `autoload/*`  to `~/.config/nvim/autoload/`
 
 In vim plug plugins call
 
