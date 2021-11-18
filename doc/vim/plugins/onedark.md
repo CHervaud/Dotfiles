@@ -15,12 +15,6 @@ From the [onedark repository](https://github.com/joshdick/onedark.vim)
 - Copy `colors/*` to `~/.config/nvim/colors/`
 - Copy `autoload/*`  to `~/.config/nvim/autoload/`
 
-In vim plug plugins call
-
-```vim
-Plug 'joshdick/onedark.vim.git'
-```
-
 ## Tips and configuration
 
 In your vim configuration file
