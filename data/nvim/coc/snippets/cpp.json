@@ -13,7 +13,7 @@
               "header" : {
                   "prefix" : "header",
                   "body" : [
-                      "/*", "** EPITECH PROJECT, 2020", "** ${1:ProjectName}",
+                      "/*", "** EPITECH PROJECT, 2021", "** ${1:ProjectName}",
                       "** File description:", "** ${2:FileDescription}", "*/",
                       "", "$0"
                   ],
@@ -23,7 +23,7 @@
         : {
             "prefix" : "header_hpp",
             "body" : [
-                "/*", "** EPITECH PROJECT, 2020", "** ${1:ProjectName}",
+                "/*", "** EPITECH PROJECT, 2021", "** ${1:ProjectName}",
                 "** File description:", "** ${2:FileDescription}", "*/", "",
                 "#ifndef $3", "#define $3", "", "$0", "", "#endif /* !$3 */",
                 ""
