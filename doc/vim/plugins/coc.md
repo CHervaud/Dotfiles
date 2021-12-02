@@ -198,6 +198,7 @@ Their is a thing called 'extension' in coc, which is like a 'live corrector'
 
 Some extensions I recommend to install:
 
+- coc-tabnine
 - coc-tsserver
 - coc-json
 - coc-yaml

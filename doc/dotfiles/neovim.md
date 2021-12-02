@@ -60,6 +60,14 @@ Type `:PlugInstall` to install all the plugins
 
 And type `:call mkdp#util#install()` to install markdown preview
 
+ReLaunch neovim:
+
+```bash
+nvim
+```
+
+Type `:CocInstall coc-tabnine coc-git coc-calc coc-yaml coc-sh coc-python coc-pyright coc-markdownlint coc-json coc-clangd`
+
 ## Next doc
 
 Now it's time to check [git doc](git.md)

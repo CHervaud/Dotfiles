@@ -4,11 +4,6 @@ let mapleader=","
 
 " Global
 
-inoremap #i< #include <.h><Esc>hhi
-inoremap #i" #include "my.h"<Esc>hhi
-inoremap inti int i = 0;
-inoremap inty int y = 0;
-inoremap intj int j = 0;
 inoremap jk <Esc>
 inoremap kj <Esc>
 inoremap JK <Esc>
@@ -115,3 +110,18 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
+
+" Show avaible quickfixs
+nmap <leader>ac  <Plug>(coc-codeaction)
+" Apply AutoFix
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+" Forece display coc
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+
+" Toggle coc-tabnine
+nmap <leader>tn call CocAction('toggleExtension', 'coc-tabnine')

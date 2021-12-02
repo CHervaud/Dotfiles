@@ -128,10 +128,9 @@ Here are some plugins I use:
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [vim-css-color](https://github.com/ap/vim-css-color)
 - [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
-- [tabnine](https://github.com/codota/tabnine-vim)
 - [NerdCommenter](https://github.com/preservim/nerdcommenter)
-- [Vim](https://github.com/cdelledonne/vim-cmake)
-- [Instant](https://github.com/jbyuki/instant.nvim)
+- [vim cmake](https://github.com/cdelledonne/vim-cmake)
+- [instant](https://github.com/jbyuki/instant.nvim)
 
 I've made some documentation on this plugins [here](plugins_doc.md)
 
