@@ -77,8 +77,8 @@ nmap <leader>cq :CMakeClose<CR>
 " CoC
 
 " Use `<leader>n` and `<leader>N` to navigate errors/warnings
-nmap <silent> <leader>n <Plug>(coc-diagnostic-prev)
-nmap <silent> <leader>N <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>n <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>N <Plug>(coc-diagnostic-prev)
 
 " Code navigation.
 nmap <silent> gd <Plug>(coc-definition)
