@@ -38,7 +38,7 @@ Start upgrading pacman to the last version
 sudo pacman -Syu
 ```
 
-- brave
+- brave-browser
 - python3
 - git
 - vim, neovim
@@ -59,7 +59,7 @@ sudo pacman -Syu
 With this command:
 
 ```bash
-sudo pacman -S brave python3 git vim neovim xclip terminator zsh obs-studio discord nodejs docker docker-compose gestures libinput-gestures gcc clang gcovr pinta krita tree
+sudo pacman -S brave-browser python3 git vim neovim xclip terminator zsh obs-studio discord nodejs docker docker-compose gestures libinput-gestures gcc clang gcovr pinta krita tree
 ```
 
 #### Pip installations
