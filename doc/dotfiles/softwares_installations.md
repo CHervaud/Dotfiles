@@ -32,6 +32,12 @@ All of this section
 
 #### Pacman installations
 
+Start upgrading pacman to the last version
+
+```bash
+sudo pacman -Syu
+```
+
 - brave
 - python3
 - git
