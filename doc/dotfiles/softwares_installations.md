@@ -30,7 +30,7 @@ All of this section
 
 ### And how to install it
 
-If you need to config internet at Epitech, connect with this
+If you need to config internet at Epitech, connect to the `IONIS` network like this
 
 ![Epitech Wifi config](img/epitech_wifi_config.png)
 
