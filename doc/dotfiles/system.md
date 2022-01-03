@@ -97,8 +97,8 @@ Add this shortcuts:
 |`terminator`            |Ctrl + Alt + I      |
 |`brave`                 |Ctrl + Alt + O      |
 |`discord`               |Ctrl + Alt + U      |
-|`xfce4-screenshouter -r`|Print               |
-|`xfce4-screenshouter -f`|Ctrl + Shift + Print|
+|`xfce4-screenshooter -r`|Print               |
+|`xfce4-screenshooter -f`|Ctrl + Shift + Print|
 
 ### Enable pacman colored output
 
