@@ -4,6 +4,11 @@ let mapleader=","
 
 " Global
 
+inoremap #i< #include <.h><Esc>hhi
+inoremap #i" #include "my.h"<Esc>hhi
+inoremap inti int i = 0;
+inoremap inty int y = 0;
+inoremap intj int j = 0;
 inoremap jk <Esc>
 inoremap kj <Esc>
 inoremap JK <Esc>
@@ -61,24 +66,24 @@ map <C-n> :NERDTreeToggle<CR>
 " Cmake
 
 " Generate
-nmap <leader>cg :CMakeGenerate<CR>
+nmap <leader>mg :CMakeGenerate<CR>
 " Build
-nmap <leader>cb :CMakeBuild<CR>
+nmap <leader>mb :CMakeBuild<CR>
 " Install
-nmap <leader>ci :CMakeInstall<CR>
+nmap <leader>mi :CMakeInstall<CR>
 " Clean
-nmap <leader>cc :CMakeClean<CR>
+nmap <leader>mc :CMakeClean<CR>
 " Open window
-nmap <leader>co :CmakeOpen<CR>
+nmap <leader>mo :CmakeOpen<CR>
 " Close window
-nmap <leader>cq :CMakeClose<CR>
+nmap <leader>mq :CMakeClose<CR>
 
 
 " CoC
 
 " Use `<leader>n` and `<leader>N` to navigate errors/warnings
-nmap <silent> <leader>n <Plug>(coc-diagnostic-next)
-nmap <silent> <leader>N <Plug>(coc-diagnostic-prev)
+nmap <silent> <leader>n <Plug>(coc-diagnostic-prev)
+nmap <silent> <leader>N <Plug>(coc-diagnostic-next)
 
 " Code navigation.
 nmap <silent> gd <Plug>(coc-definition)
@@ -124,4 +129,4 @@ else
 endif
 
 " Toggle coc-tabnine
-nmap <leader>tn call CocAction('toggleExtension', 'coc-tabnine')
+nmap <leader>tn :call CocAction('toggleExtension', 'coc-tabnine')<CR>

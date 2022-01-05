@@ -25,5 +25,6 @@ Plug 'wsdjeg/vim-todo'
 Plug 'cdelledonne/vim-cmake'
 Plug 'jbyuki/instant.nvim'
 Plug 'preservim/nerdcommenter'
+Plug 'neovimhaskell/haskell-vim'
 
 call plug#end()

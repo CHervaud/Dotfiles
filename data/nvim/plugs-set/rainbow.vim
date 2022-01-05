@@ -7,4 +7,5 @@ let g:rainbow_load_separately = [
     \ [ 'nerdtree,markdown' , [] ],
     \ ]
 
-let g:rainbow_guifgs = ['MediumVioletRed', 'Magenta2', 'Yellow2', 'PaleTurquoise1']
+let g:rainbow_guifgs = ['magenta', 'firebrick', 'gold', 'deepskyblue', 'slateblue']
+let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']

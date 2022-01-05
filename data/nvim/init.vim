@@ -4,7 +4,7 @@ set nofixendofline                              " Disable adding new line and en
 
 " Auto-completion
 set wildignorecase                              " Make filenames autocompletion case-insensitive
-set wildignore+=*.a,*.o,*.gcno,*.gcda           " Exclude tmp files from autocompletion
+set wildignore+=*.a,*.o,*.gcno,*.gcda           " Exclude tmp fils from autocompletion
 set t_Co=256
 
 set autowriteall                                " Autowrite when replace in multiple buffers
@@ -56,5 +56,6 @@ source $HOME/.config/nvim/plugs-set/indentline.vim
 source $HOME/.config/nvim/plugs-set/rainbow.vim
 source $HOME/.config/nvim/plugs-set/vimspector.vim
 source $HOME/.config/nvim/plugs-set/nerdcommenter.vim
+source $HOME/.config/nvim/plugs-set/haskell.vim
 
 source $HOME/.config/nvim/keybindings/map.vim
