@@ -4,11 +4,6 @@ let mapleader=","
 
 " Global
 
-inoremap #i< #include <.h><Esc>hhi
-inoremap #i" #include "my.h"<Esc>hhi
-inoremap inti int i = 0;
-inoremap inty int y = 0;
-inoremap intj int j = 0;
 inoremap jk <Esc>
 inoremap kj <Esc>
 inoremap JK <Esc>
@@ -112,6 +107,13 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+" Snippets
+" Trigger snippets in completion
+imap <C-l> <Plug>(coc-snippets-expand)
+
+" Jump to next placeholder
+vmap <C-j> <Plug>(coc-snippets-select)
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
