@@ -48,6 +48,14 @@ Setup a font to get icons (repository clone is really long):
 git clone https://github.com/ryanoasis/nerd-fonts.git /tmp/nerd-fonts; cd /tmp/nerd-fonts; ./install.sh Hack
 ```
 
+### Configure snippets
+
+According to where you have cloned this repository, copy the content of `Dotfiles/data/coc/*` in `~/.config/coc/`:
+
+```bash
+cp -r /tmp/Dotfiles/data/coc/* ~/.config/coc/
+```
+
 ### Install plugins
 
 Launch neovim:
@@ -66,7 +74,7 @@ ReLaunch neovim:
 nvim
 ```
 
-Type `:CocInstall coc-tabnine coc-git coc-calc coc-yaml coc-sh coc-python coc-pyright coc-markdownlint coc-json coc-clangd`
+Type `:CocInstall coc-tabnine coc-git coc-calc coc-yaml coc-sh coc-python coc-pyright coc-markdownlint coc-json coc-clangd coc-snippets`
 
 ## Next doc
 

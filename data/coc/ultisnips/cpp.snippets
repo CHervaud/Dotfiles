@@ -1,0 +1,259 @@
+# A valid snippet should starts with:
+# snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+snippet inc "Create system include line" b
+#include <${0:#lib}>
+endsnippet
+
+snippet Inc "Create custom include line" b
+#include "${0:#lib}"
+endsnippet
+
+snippet inti "Create basic int named i"
+int i = 0;
+endsnippet
+
+snippet intj "Create basic int named j"
+int j = 0;
+endsnippet
+
+snippet inty "Create basic int named y"
+int y = 0;
+endsnippet
+
+snippet longi "Create basic long named i"
+long i = 0;
+endsnippet
+
+snippet longj "Create basic long named j"
+long j = 0;
+endsnippet
+
+snippet longy "Create basic long named y"
+long y = 0;
+endsnippet
+
+snippet ifndef "Create no include loop guard"
+#ifndef ${0:#ANTI}_H
+#define ${0:#ANTI}_H
+
+
+
+#endif // ${0:#ANTI}_H
+endsnippet
+
+snippet if "Create long if"
+if (${1:condition}) {
+	${0:code}
+}
+endsnippet
+
+snippet ifs "Create short if"
+if (${1:condition})
+	${0:code}
+endsnippet
+
+snippet elif "Create long else if"
+else if {
+	${0:code}
+}
+endsnippet
+
+snippet elifs "Create short else if"
+else if (${1:condition})
+	${0:code}
+endsnippet
+
+snippet else "Create long else"
+else {
+	${0:code}
+}
+endsnippet
+
+snippet elses "Create short else"
+else
+	${0:code}
+endsnippet
+
+snippet switch "Create switch with default"
+switch (${1:variable}) {
+	case ${2:case}:
+		${3:code}
+		break;
+	default:
+		${4:code}
+}
+endsnippet
+
+snippet switchs "Create switch without default"
+switch (${1:variable}) {
+	case ${2:value}:
+		${0:code}
+		break;
+}
+endsnippet
+
+snippet case "Create a switch case"
+case ${1:value}
+	${0:code}
+	break;
+endsnippet
+
+snippet tern "Create ternaire"
+${1:condition} ? ${2:yes} : ${3:no}
+endsnippet
+
+snippet while "Create long while"
+while (${1:condition}) {
+	${0:code}
+}
+endsnippet
+
+snippet whiles "Create short while"
+while (${1:condition})
+	${0:code}
+endsnippet
+
+snippet for "Create long for"
+for (${1:init}; ${2:condition}; ${3:index}) {
+	${0:code}
+}
+endsnippet
+
+snippet fors "Create short for"
+for (${1:init}; ${2:condition}; ${3:index})
+	${0:code}
+endsnippet
+
+snippet forn "Create long navigator for"
+for (${4:int} ${2:i} = ${3:0}; ${2:i} < ${1:count}; ${2:i}${5:++}) {
+	${0:code}
+}
+endsnippet
+
+snippet forsn "Create short navigator for"
+for (${4:int} ${2:i} = ${3:0}; ${2:i} < ${1:count}; ${2:i}${5:++})
+	${0:code}
+endsnippet
+
+snippet struct "Struct definition"
+typedef struct ${1:name}_s {
+	${0:code}
+} ${1:name}_t;
+endsnippet
+
+snippet enum "Enum definition"
+typedef enum {
+	${0:code}
+} ${1:name}_t;
+endsnippet
+
+snippet return "Basic return"
+return ${0:value};
+endsnippet
+
+snippet fun "Basic function definition"
+${1:void} ${2:function}(${3:void})
+{
+	${0:code}
+}
+endsnippet
+
+snippet dfun "Basic function prototype"
+/*
+** ${4:Brief}
+*/
+${1:void} ${2:function}(${3:void});
+endsnippet
+
+snippet fun1 "Basic function definition with 1 parameter"
+${1:void} ${2:function}(${3:int} ${4:var})
+{
+	${0:code}
+}
+endsnippet
+
+snippet dfun1 "Basic function prototype with 1 parameter"
+/*
+** ${2:Brief}
+**
+** $5 -> ${6:description}
+*/
+${3:void} ${1:function}(${4:int} ${5:var});
+endsnippet
+
+snippet fun2 "Basic function definition with 2 parameters"
+${1:void} ${2:function}(${3:int} ${4:var}, ${5:int} ${6:var})
+{
+	${0:code}
+}
+endsnippet
+
+snippet dfun2 "Basic function prototype with 2 parameters"
+/*
+** ${2:Brief}
+**
+** $5 -> ${6:description}
+** $8 -> ${9:description}
+*/
+${3:void} ${1:function}(${4:int} ${5:var}, ${7:int} ${8:var});
+endsnippet
+
+snippet fun3 "Basic function definition with 3 parameters"
+${1:void} ${2:function}(${3:int} ${4:var}, ${5:int} ${6:var}, ${7:int} ${8:var})
+{
+	${0:code}
+}
+endsnippet
+
+snippet dfun3 "Basic function prototype with 3 parameters"
+/*
+** ${2:Brief}
+**
+** $5 -> ${6:description}
+** $8 -> ${9:description}
+** $11 -> ${12:description}
+*/
+${3:void} ${1:function}(${4:int} ${5:var}, ${7:int} ${8:var}, ${10:int} ${11:var});
+endsnippet
+
+snippet fun4 "Basic function definition with 4 parameters"
+${1:void} ${2:function}(${3:int} ${4:var}, ${5:int} ${6:var}, ${7:int} ${8:var}, ${9:int} ${10:var})
+{
+	${0:code}
+}
+endsnippet
+
+snippet dfun4 "Basic function prototype with 4 parameters"
+/*
+** ${2:Brief}
+**
+** $5 -> ${6:description}
+** $8 -> ${9:description}
+** $11 -> ${12:description}
+** $14 -> ${15:description}
+*/
+${3:void} ${1:function}(${4:int} ${5:var}, ${7:int} ${8:var}, ${10:int} ${11:var}, ${13:int} ${14:var});
+endsnippet
