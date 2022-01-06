@@ -1,6 +1,7 @@
 syntax enable                                   " Enable syntax higllighing
 
 set nofixendofline                              " Disable adding new line and end of oppened files
+set linebreak                                   " Split too long line smart
 
 " Auto-completion
 set wildignorecase                              " Make filenames autocompletion case-insensitive
