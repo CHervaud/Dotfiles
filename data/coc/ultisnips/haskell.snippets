@@ -23,19 +23,24 @@
 #
 # Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
 
-snippet fun "Create function with 1 parameter"
+snippet fun "Create function without parameters"
+${1:fun} :: ${2:a}
+$1 = ${0:$2}
+endsnippet
+
+snippet fun1 "Create function with 1 parameter"
 ${1:fun} :: ${2:a} -> ${3:a}
-$1 $2 = ${0:$2}
+$1 ${4:$2} = ${0:$2}
 endsnippet
 
 snippet fun2 "Create function with 2 parameters"
 ${1:fun} :: ${2:a} -> ${3:a} -> ${4:a}
-$1 $2 $3 = ${0:$2}
+$1 ${5:$2} ${6:$3} = ${0:$2}
 endsnippet
 
 snippet fun3 "Create function with 3 parameters"
 ${1:fun} :: ${2:a} -> ${3:a} -> ${4:a} -> ${5:a}
-$1 $2 $3 $4 = ${0:$2}
+$1 ${6:$2} ${7:$3} ${8:$4} = ${0:$2}
 endsnippet
 
 snippet tup "Create a tuple one element"
