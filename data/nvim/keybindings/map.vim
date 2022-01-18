@@ -132,3 +132,8 @@ endif
 
 " Toggle coc-tabnine
 nmap <leader>tn :call CocAction('toggleExtension', 'coc-tabnine')<CR>
+
+" Naviguate in buffers
+nnoremap <leader>k :bn<CR>
+nnoremap <leader>j :bp<CR>
+nnoremap <leader>bq :bp <BAR> bd #<CR>
