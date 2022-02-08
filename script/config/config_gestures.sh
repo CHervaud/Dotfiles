@@ -25,16 +25,12 @@ echo -e "\033[1m\033[96mConfiguring Gestures...\033[0m\n"
 if [ $1 -eq 1 ] ; then
     sudo gpasswd -a $USER input >> /dev/null
     ret_code=$?
-    libinput-gestures-setup service >> /dev/null
-    ret_code=$((ret_code + $?))
-    libinput-gestures-setup autostart >> /dev/null
+    libinput-gestures-setup stop desktop autostart start >> /dev/null
     ret_code=$((ret_code + $?))
 else
     sudo gpasswd -a $USER input
     ret_code=$?
-    libinput-gestures-setup service
-    ret_code=$((ret_code + $?))
-    libinput-gestures-setup autostart
+    libinput-gestures-setup stop desktop autostart start
     ret_code=$((ret_code + $?))
 fi
 check_error $ret_code "Gestures"

@@ -21,7 +21,7 @@ sudo gpasswd -a $USER input
 Setup systemd service:
 
 ```bash
-libinput-gestures-setup service
+libinput-gestures-setup stop desktop autostart start
 ```
 
 Enable service autostart:
