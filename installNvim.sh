@@ -6,6 +6,7 @@ RedColor="\033[0;91m"
 
 dotfilesPath="/tmp/CDotfiles"
 nvimPath="$HOME/.config/nvim"
+cocPath="$HOME/.config/coc"
 
 function confirm {
     local _response
@@ -62,7 +63,9 @@ echo -e "${CyanColor}Copying full config${NoColor}"
 rm -rf $nvimPath
 mkdir -p $nvimPath
 cp $dotfilesPath/data/nvim/* $nvimPath -r
-cp $dotfilesPath/data/coc/ultisnips/* $HOME/.config/coc/ -r
+rm -rf $cocPath
+mkdir -p $cocPath
+cp $dotfilesPath/data/coc/* $cocPath -r
 
 echo -e "${CyanColor}Installing last plugins and coc${NoColor}"
 nvim -c PlugInstall -c PlugUpdate -c CocInstall -c qa
