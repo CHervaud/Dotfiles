@@ -42,6 +42,20 @@ if [ ! $? -eq 0 ]; then
 else
     echo -e "${CyanColor}Using nvim at $nvimBinPath${NoColor}"
 fi
+nodeBinPath=$( which node )
+if [ ! $? -eq 0 ]; then
+    echo -e "\n${RedColor}Please install node first${NoColor}"
+    exit 1
+else
+    echo -e "${CyanColor}Using nodejs at $nodeBinPath${NoColor}"
+fi
+yarnBinPath=$( which nvim )
+if [ ! $? -eq 0 ]; then
+    echo -e "\n${RedColor}Please install yarn first${NoColor}"
+    exit 1
+else
+    echo -e "${CyanColor}Using yarn at $yarnBinPath${NoColor}"
+fi
 set -eo pipefail
 
 echo -e "${CyanColor}Cloning Dotfiles to ${dotfilesPath}${NoColor}"
