@@ -34,12 +34,12 @@ function confirm {
 confirm "Using this script will remove the existing neovim configuration, Continue"
 
 set +eo pipefail
-nvimPath=$( which nvim )
+nvimBinPath=$( which nvim )
 if [ ! $? -eq 0 ]; then
     echo -e "\n${RedColor}Please install neovim first${NoColor}"
     exit 1
 else
-    echo -e "${CyanColor}Using nvim at $nvimPath${NoColor}"
+    echo -e "${CyanColor}Using nvim at $nvimBinPath${NoColor}"
 fi
 set -eo pipefail
 
