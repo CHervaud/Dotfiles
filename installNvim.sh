@@ -73,8 +73,8 @@ cp $dotfilesPath/data/nvim/plugs-set/vimplug.vim $nvimPath/init.vim
 echo -e "${CyanColor}Installing onedark${NoColor}"
 rm -rf /tmp/onedark
 git clone https://github.com/joshdick/onedark.vim /tmp/onedark
-cp /tmp/onedark/colors $dotfilesPath/colors -r
-cp /tmp/onedark/autoload $dotfilesPath/autoload -r
+cp /tmp/onedark/colors $dotfilesPath/data/nvim/colors -r
+cp /tmp/onedark/autoload $dotfilesPath/data/nvim/autoload -r
 
 echo -e "${CyanColor}Installing plugins${NoColor}"
 nvim -c PlugInstall -c qa
