@@ -52,7 +52,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 echo -e "${CyanColor}Copying plugins list${NoColor}"
 rm -rf $nvimPath
-mkdir $nvimPath
+mkdir -p $nvimPath
 cp $dotfilesPath/data/nvim/plugs-set/vimplug.vim $nvimPath/init.vim
 
 echo -e "${CyanColor}Installing plugins${NoColor}"
@@ -60,7 +60,7 @@ nvim -c PlugInstall -c qa
 
 echo -e "${CyanColor}Copying full config${NoColor}"
 rm -rf $nvimPath
-mkdir $nvimPath
+mkdir -p $nvimPath
 cp $dotfilesPath/data/nvim/* $nvimPath -r
 cp $dotfilesPath/data/coc/ultisnips/* $HOME/.config/coc/ -r
 
