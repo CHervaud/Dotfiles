@@ -1,6 +1,6 @@
 # Dotfiles
 
-This is my little repository for my dotfiles, feel free to use my configuration !
+This is my litle repository for my dotfiles, feel free to use my configuration !
 
 ## Use
 
@@ -19,6 +19,11 @@ One that do all the installations [here](script/install/install_all.sh)
 And one that do all the configurations [here](script/config/config_all.sh)
 
 All installations scripts [here](script/install/) and all configurations scripts [here](script/config/)
+
+If you just want to install neovim configuration, execute the following command
+```sh
+sh -c 'curl -fLo /tmp/nvimInstaller.sh --create-dirs "https://raw.githubusercontent.com/Curs3W4ll/Dotfiles/master/installNvim.sh" && chmod +x /tmp/nvimInstaller.sh && /tmp/./nvimInstaller.sh'
+```
 
 ## Other docs
 
