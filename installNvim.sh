@@ -60,10 +60,14 @@ echo -e "${CyanColor}Copying full config${NoColor}"
 rm -rf $nvimPath
 mkdir $nvimPath
 cp $dotfilesPath/data/nvim/* $nvimPath -r
-cp $dotfilesPath/data/coc/ultisnips/ $HOME/coc/ -r
+ls $dotfilesPath/data/nvim
+ls $nvimPath
+cp $dotfilesPath/data/coc/ultisnips/* $HOME/coc/ -r
 
 echo -e "${CyanColor}Installing last plugins and coc${NoColor}"
 nvim -c PlugInstall -c PlugUpdate -c CocInstall -c qa
 
 echo -e "${CyanColor}Removing cloned repository${NoColor}"
 rm -rf $dotfilesPath
+
+echo -e "${CyanColor}INSTALLATION SUCCESSFULL${NoColor}"
