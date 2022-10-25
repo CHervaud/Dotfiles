@@ -89,7 +89,7 @@ cp $dotfilesPath/data/coc/* $cocPath -r
 
 echo -e "${CyanColor}Installing last plugins and coc${NoColor}"
 nvim -c PlugInstall -c PlugUpdate -c CocInstall -c qa
-nvim -c -c "CocInstall coc-tabnine coc-snippets coc-yaml coc-tsserver coc-styled-components coc-sh coc-python coc-json coc-clangd" -c qa
+nvim -c "CocInstall coc-tabnine coc-snippets coc-yaml coc-tsserver coc-styled-components coc-sh coc-python coc-json coc-clangd"
 
 echo -e "${CyanColor}Removing cloned repository${NoColor}"
 rm -rf $dotfilesPath
