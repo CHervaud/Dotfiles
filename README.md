@@ -22,7 +22,7 @@ All installations scripts [here](script/install/) and all configurations scripts
 
 If you just want to install neovim configuration, execute the following command
 ```sh
-sh -c 'curl -fLo /tmp/nvimInstaller.sh --create-dirs "https://raw.githubusercontent.com/Curs3W4ll/Dotfiles/master/installNvim.sh" && chmod +x /tmp/nvimInstaller.sh && /tmp/./nvimInstaller.sh'
+sh -c 'rm -f /tmp/nvimInstaller.sh && curl -fLo /tmp/nvimInstaller.sh --create-dirs "https://raw.githubusercontent.com/Curs3W4ll/Dotfiles/master/installNvim.sh" && chmod +x /tmp/nvimInstaller.sh && /tmp/./nvimInstaller.sh'
 ```
 
 ## Other docs
