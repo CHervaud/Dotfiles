@@ -1,6 +1,6 @@
 call plug#begin()
 
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Nero-F/vim-tek-header'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
