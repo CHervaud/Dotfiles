@@ -30,4 +30,4 @@ source $HOME/.config/nvim/keybindings/mkdp.vim
 source $HOME/.config/nvim/keybindings/nerdtree.vim
 source $HOME/.config/nvim/keybindings/cmake.vim
 source $HOME/.config/nvim/keybindings/coc.vim
-source $HOME/.config/nvim/keybindings/grammarous.vim.vim
+source $HOME/.config/nvim/keybindings/grammarous.vim
