@@ -59,7 +59,7 @@ nvim -c PlugInstall -c qa
 echo -e "${CyanColor}Copying full config${NoColor}"
 rm -rf $nvimPath
 mkdir $nvimPath
-cp $dotfilesPath/data/nvim/ $nvimPath/ -r
+cp $dotfilesPath/data/nvim/* $nvimPath -r
 cp $dotfilesPath/data/coc/ultisnips/ $HOME/coc/ -r
 
 echo -e "${CyanColor}Installing last plugins and coc${NoColor}"
