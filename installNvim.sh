@@ -51,6 +51,8 @@ echo -e "${CyanColor}Installing vim-plug for neovim${NoColor}"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 echo -e "${CyanColor}Copying plugins list${NoColor}"
+rm -rf $nvimPath
+mkdir $nvimPath
 cp $dotfilesPath/data/nvim/plugs-set/vimplug.vim $nvimPath/init.vim
 
 echo -e "${CyanColor}Installing plugins${NoColor}"
@@ -60,9 +62,7 @@ echo -e "${CyanColor}Copying full config${NoColor}"
 rm -rf $nvimPath
 mkdir $nvimPath
 cp $dotfilesPath/data/nvim/* $nvimPath -r
-ls $dotfilesPath/data/nvim
-ls $nvimPath
-cp $dotfilesPath/data/coc/ultisnips/* $HOME/coc/ -r
+cp $dotfilesPath/data/coc/ultisnips/* $HOME/.config/coc/ -r
 
 echo -e "${CyanColor}Installing last plugins and coc${NoColor}"
 nvim -c PlugInstall -c PlugUpdate -c CocInstall -c qa
