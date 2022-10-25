@@ -2,7 +2,7 @@
 let NERDTreeShowHidden=1
 
 " Ignore files and folders
-let NERDTreeIgnore=['\.git$', '\.vscode$', '\.clangd$', '\.cache$', 'node_modules$', 'compile_commands.json', '\.o$', '\.a$', '\.gcda$', '\.gcno$', '\.hi$']
+let NERDTreeIgnore=['\.git$', '\.vscode$', '\.clangd$', '\.cache$', 'node_modules$', 'compile_commands.json', '\.o$', '\.a$', '\.gcda$', '\.gcno$', 'vgcore\.', '\.hi$', 'build$']
 
 " When open a directory, start tree automatically
 autocmd StdinReadPre * let s:std_in=1
