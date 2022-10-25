@@ -32,8 +32,6 @@ function confirm {
     done
 }
 
-confirm "Using this script will remove the existing neovim configuration, Continue"
-
 set +eo pipefail
 nvimBinPath=$( which nvim )
 if [ ! $? -eq 0 ]; then
@@ -57,6 +55,8 @@ else
     echo -e "${CyanColor}Using yarn at $yarnBinPath${NoColor}"
 fi
 set -eo pipefail
+
+confirm "Using this script will remove the existing neovim configuration, Continue"
 
 echo -e "${CyanColor}Cloning Dotfiles to ${dotfilesPath}${NoColor}"
 rm -rf $dotfilesPath
