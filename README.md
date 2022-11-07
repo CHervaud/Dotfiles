@@ -30,6 +30,11 @@ If you just want to install zsh configuration, execute the following command
 sh -c 'rm -f /tmp/zshInstaller.sh && curl -fLo /tmp/zshInstaller.sh --create-dirs "https://raw.githubusercontent.com/Curs3W4ll/Dotfiles/master/installZsh.sh" && chmod +x /tmp/zshInstaller.sh && /tmp/./zshInstaller.sh'
 ```
 
+If you just want to install terminator configuration, execute the following command
+```sh
+sh -c 'rm -f /tmp/terminatorInstaller.sh && curl -fLo /tmp/terminatorInstaller.sh --create-dirs "https://raw.githubusercontent.com/Curs3W4ll/Dotfiles/master/installTerminator.sh" && chmod +x /tmp/terminatorInstaller.sh && /tmp/./terminatorInstaller.sh'
+```
+
 ## Other docs
 
 I have also made some documentations for [vim](doc/vim/vim.md) and for [gitlab](doc/gitlab.md)

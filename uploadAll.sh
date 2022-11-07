@@ -2,3 +2,4 @@
 
 ./uploadNvimConfig.sh
 ./uploadZshConfig.sh
+./uploadTerminatorConfig.sh
