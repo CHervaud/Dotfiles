@@ -246,68 +246,23 @@ snippet guard "Header guard" A
 endsnippet
 
 snippet dfun "Basic function prototype"
-/*
- * ${2:Brief}
- *
- * ${4:No return value}
- */
-${3:void} ${1:function}() noexcept;
+${2:void} ${1:function}() noexcept;
 endsnippet
 
 snippet dfun1 "Basic function prototype with 1 parameter" A
-/*
- * ${2:Brief}
- *
- * ${4:No return value}
- *
- * $6 -> ${7:description}
- */
-${3:void} ${1:function}(${5:int} ${6:var}) noexcept;
+${2:void} ${1:function}(${3:int} ${4:var}) noexcept;
 endsnippet
 
 snippet dfun2 "Basic function prototype with 2 parameters" A
-/*
- * ${2:Brief}
- *
- * ${4:No return value}
- *
- * $6 -> ${7:description}
- *
- * $9 -> ${10:description}
- */
-${3:void} ${1:function}(${5:int} ${6:var}, ${8:int} ${9:var}) noexcept;
+${2:void} ${1:function}(${3:int} ${4:var}, ${5:int} ${6:var}) noexcept;
 endsnippet
 
 snippet dfun3 "Basic function prototype with 3 parameters" A
-/*
- * ${2:Brief}
- *
- * ${4:No return value}
- *
- * $6 -> ${7:description}
- *
- * $9 -> ${10:description}
- *
- * $12 -> ${13:description}
- */
-${3:void} ${1:function}(${5:int} ${6:var}, ${8:int} ${9:var}, ${11:int} ${12:var}) noexcept;
+${2:void} ${1:function}(${3:int} ${4:var}, ${5:int} ${6:var}, ${7:int} ${8:var}) noexcept;
 endsnippet
 
 snippet dfun4 "Basic function prototype with 4 parameters" A
-/*
- * ${2:Brief}
- *
- * ${4:No return value}
- *
- * $6 -> ${7:description}
- *
- * $9 -> ${10:description}
- *
- * $12 -> ${13:description}
- *
- * $15 -> ${16:description}
- */
-${3:void} ${1:function}(${5:int} ${6:var}, ${8:int} ${9:var}, ${11:int} ${12:var}, ${14:int} ${15:var}) noexcept;
+${2:void} ${1:function}(${3:int} ${4:var}, ${5:int} ${6:var}, ${7:int} ${8:var}, ${9:int} ${10:var}) noexcept;
 endsnippet
 
 snippet struct "Structure definition" bA
@@ -338,9 +293,6 @@ ${0}
 endsnippet
 
 snippet bclass "Basic class" bA
-/*
- * ${2:Brief}
- */
 class ${1:Test} {
 	public:
 		$1() noexcept = default;
@@ -349,9 +301,6 @@ class ${1:Test} {
 endsnippet
 
 snippet sclass "Special members class" bA
-/*
- * ${2:Brief}
- */
 class ${1:Test} {
 	public:
 		$1() noexcept = default;
@@ -365,9 +314,6 @@ class ${1:Test} {
 endsnippet
 
 snippet staticclass "Static class" bA
-/*
- * ${2:Brief}
- */
 class I${1:Test} {
 	public:
 		I$1() noexcept = delete;
@@ -378,9 +324,6 @@ class I${1:Test} {
 endsnippet
 
 snippet staticsclass "Static class with special members" bA
-/*
- * ${2:Brief}
- */
 class I${1:Test} {
 	public:
 		I$1() noexcept = delete;
@@ -394,9 +337,6 @@ class I${1:Test} {
 endsnippet
 
 snippet iclass "Interface class" bA
-/*
- * ${2:Brief}
- */
 class I${1:Test} {
 	public:
 		I$1() noexcept = default;
@@ -407,9 +347,6 @@ class I${1:Test} {
 endsnippet
 
 snippet isclass "Interface class with special members" bA
-/*
- * ${2:Brief}
- */
 class I${1:Test} {
 	public:
 		I$1() noexcept = default;
@@ -423,9 +360,6 @@ class I${1:Test} {
 endsnippet
 
 snippet aclass "Abstract class" bA
-/*
- * ${2:Brief}
- */
 class A${1:Test} {
 	public:
 		A$1() noexcept = default;
@@ -436,9 +370,6 @@ class A${1:Test} {
 endsnippet
 
 snippet asclass "Abstract class with special members" bA
-/*
- * ${2:Brief}
- */
 class A${1:Test} {
 	public:
 		A$1() noexcept = default;
@@ -452,31 +383,19 @@ class A${1:Test} {
 endsnippet
 
 snippet errclass "Error class" bA
-/*
- * $1 error throwed when an error occured
- */
 class ${1}Error: public std::exception {
 	public:
 		explicit $1Error(std::string const& message);
 		~$1Error() override = default;
 
-		/*
-         * Return the error message
-		 */
 		const char* what() const noexcept override;
 
     protected:
-        /*
-         * Message that describe the error
-         */
         std::string message;
 };
 endsnippet
 
 snippet errsclass "Error class with special members" bA
-/*
- * $1 error throwed when an error occured
- */
 class ${1}Error: public std::exception {
 	public:
 		$1Error() noexcept = delete;
@@ -488,15 +407,9 @@ class ${1}Error: public std::exception {
 		$1Error& operator=($1Error const& other) = default;
 		$1Error& operator=($1Error&& other) = default;
 
-		/*
-         * Return the error message
-		 */
 		const char* what() const noexcept override;
 
     protected:
-        /*
-         * Message that describe the error
-         */
         std::string message;
 };
 endsnippet

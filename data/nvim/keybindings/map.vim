@@ -24,6 +24,9 @@ imap <C-s> <Esc>:x<CR>
 " Visual replace
 vnoremap <C-r> "hy:%s/<C-r>h/<C-r>h/g<left><left>
 
+" Space to fold
+nmap <silent><nowait> <Space> za
+
 source $HOME/.config/nvim/keybindings/arduino.vim
 source $HOME/.config/nvim/keybindings/gitgutter.vim
 source $HOME/.config/nvim/keybindings/mkdp.vim

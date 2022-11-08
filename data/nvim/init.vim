@@ -51,6 +51,9 @@ autocmd FileType c set cc=80                   " Show line for 80 columns
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 
+" Jenkinsfile highlighting
+au BufNewFile,BufRead Jenkinsfile setf groovy
+
 
 source $HOME/.config/nvim/plugs-set/vimplug.vim
 
