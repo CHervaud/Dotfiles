@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 NoColor="\033[0m"
 CyanColor="\033[0;36m"
@@ -51,8 +51,10 @@ echo -e "${CyanColor}Copying zsh configuration${NoColor}"
 rm -rf $destPath/.zshrc
 cp $dotfilesPath/data/zsh/zshrc $destPath/.zshrc
 
-echo -e "${CyanColor}Installing ohmyzsh${NoColor}"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if [[ ! -f $HOME/.ohmyzsh ]]; then
+    echo -e "${CyanColor}Installing ohmyzsh${NoColor}"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
 
 echo -e "${CyanColor}Installing k zsh plugin${NoColor}"
 git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
@@ -70,3 +72,4 @@ echo -e "${CyanColor}Removing cloned repository${NoColor}"
 rm -rf $dotfilesPath
 
 echo -e "${CyanColor}INSTALLATION SUCCESSFULL${NoColor}"
+echo -e "${CyanColor}Please restart your shell to configure the new one${NoColor}"
