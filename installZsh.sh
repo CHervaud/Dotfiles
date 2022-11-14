@@ -57,17 +57,31 @@ echo -e "${CyanColor}Copying zsh configuration${NoColor}"
 rm -rf $destPath/.zshrc
 cp $dotfilesPath/data/zsh/zshrc $destPath/.zshrc
 
-echo -e "${CyanColor}Installing k zsh plugin${NoColor}"
-git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
+zshCustomPath=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}
 
-echo -e "${CyanColor}Installing zsh-autosuggestions plugin${NoColor}"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+zshInstallPath=$zshCustomPath/plugins/k
+if [[ ! -d $zshInstallPath ]]; then
+    echo -e "${CyanColor}Installing k zsh plugin${NoColor}"
+    git clone https://github.com/supercrabtree/k $zshInstallPath
+fi
 
-echo -e "${CyanColor}Installing zsh-syntax-highlighting plugin${NoColor}"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+zshInstallPath=$zshCustomPath/plugins/zsh-autosuggestions
+if [[ ! -d $zshInstallPath ]]; then
+    echo -e "${CyanColor}Installing zsh-autosuggestions plugin${NoColor}"
+    git clone https://github.com/zsh-users/zsh-autosuggestions $zshInstallPath
+fi
 
-echo -e "${CyanColor}Installing PowerLevel10k theme${NoColor}"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+zshInstallPath=$zshCustomPath/plugins/zsh-syntax-highlighting
+if [[ ! -d $zshInstallPath ]]; then
+    echo -e "${CyanColor}Installing zsh-syntax-highlighting plugin${NoColor}"
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $zshCustomPath
+fi
+
+zshInstallPath=$zshCustomPath/themes/powerlevel10k
+if [[ ! -d $zshInstallPath ]]; then
+    echo -e "${CyanColor}Installing PowerLevel10k theme${NoColor}"
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+fi
 
 echo -e "${CyanColor}Removing cloned repository${NoColor}"
 rm -rf $dotfilesPath
