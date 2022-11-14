@@ -47,7 +47,7 @@ else
 fi
 set -eo pipefail
 
-confirm "Using this script will remove the existing zsh configuration ('.zshrc' file), Continue"
+confirm "Using this script will remove the existing zsh configuration ('.zshrc' file, $HOME/.oh-my-zsh dir), Continue"
 
 echo -e "${CyanColor}Cloning Dotfiles to ${dotfilesPath}${NoColor}"
 rm -rf $dotfilesPath
@@ -74,13 +74,13 @@ fi
 zshInstallPath=$zshCustomPath/plugins/zsh-syntax-highlighting
 if [[ ! -d $zshInstallPath ]]; then
     echo -e "${CyanColor}Installing zsh-syntax-highlighting plugin${NoColor}"
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $zshCustomPath
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $zshInstallPath
 fi
 
 zshInstallPath=$zshCustomPath/themes/powerlevel10k
 if [[ ! -d $zshInstallPath ]]; then
     echo -e "${CyanColor}Installing PowerLevel10k theme${NoColor}"
-    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $zshInstallPath
 fi
 
 echo -e "${CyanColor}Removing cloned repository${NoColor}"
