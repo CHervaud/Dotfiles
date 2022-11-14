@@ -1,6 +1,5 @@
 call plug#begin()
 
-" Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Nero-F/vim-tek-header'
 Plug 'jiangmiao/auto-pairs'
@@ -25,7 +24,7 @@ Plug 'cdelledonne/vim-cmake'
 Plug 'jbyuki/instant.nvim'
 Plug 'preservim/nerdcommenter'
 Plug 'rhysd/vim-clang-format'
-Plug 'PhilRunninger/bufselect.vim'
+" Plug 'PhilRunninger/bufselect.vim'
 Plug 'KabbAmine/vCoolor.vim'
 Plug 'EdenEast/nightfox.nvim'
 Plug 'othree/html5.vim'
@@ -33,5 +32,10 @@ Plug 'neoclide/vim-jsx-improve'
 Plug 'rhysd/vim-grammarous'
 Plug 'samodostal/image.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'kevinhwang91/nvim-bqf'
+Plug 'rcarriga/nvim-notify'
+Plug 'tpope/vim-fugitive'
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 
 call plug#end()

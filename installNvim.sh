@@ -55,8 +55,19 @@ else
     echo -e "${CyanColor}Using yarn at $yarnBinPath${NoColor}"
 fi
 set -eo pipefail
+pipBinPath=$( which pip )
+if [ ! $? -eq 0 ]; then
+    echo -e "\n${RedColor}Please install python pip first${NoColor}"
+    exit 1
+else
+    echo -e "${CyanColor}Using pin at $pipBinPath${NoColor}"
+fi
+set -eo pipefail
 
 confirm "Using this script will remove the existing neovim configuration, Continue"
+
+echo -e "${CyanColor}Install pynvim${NoColor}"
+pip install pynvim
 
 echo -e "${CyanColor}Cloning Dotfiles to ${dotfilesPath}${NoColor}"
 rm -rf $dotfilesPath
@@ -90,6 +101,7 @@ cp $dotfilesPath/data/coc/* $cocPath -r
 echo -e "${CyanColor}Installing last plugins and coc${NoColor}"
 nvim -c PlugInstall -c PlugUpdate -c qa
 nvim -c "CocInstall coc-tabnine coc-snippets coc-yaml coc-tsserver coc-styled-components coc-sh coc-python coc-json coc-clangd"
+nvim -c "NightfoxCompile" -c qa
 
 echo -e "${CyanColor}Removing cloned repository${NoColor}"
 rm -rf $dotfilesPath

@@ -62,6 +62,7 @@ source $HOME/.config/nvim/plugs-set/coc.vim
 source $HOME/.config/nvim/plugs-set/airline.vim
 source $HOME/.config/nvim/plugs-set/arduino.vim
 source $HOME/.config/nvim/plugs-set/better-whitespace.vim
+source $HOME/.config/nvim/plugs-set/bufferline.vim
 source $HOME/.config/nvim/plugs-set/gitmessenger.vim
 source $HOME/.config/nvim/plugs-set/instant.vim
 source $HOME/.config/nvim/plugs-set/mkdp.vim
