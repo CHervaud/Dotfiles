@@ -32,7 +32,7 @@ sh -c 'rm -f /tmp/zshInstaller.sh && curl -fLo /tmp/zshInstaller.sh --create-dir
 
 If you just want to install terminator configuration, execute the following command
 ```sh
-sh -c 'rm -f /tmp/terminatorInstaller.sh && curl -fLo /tmp/terminatorInstaller.sh --create-dirs "https://raw.githubusercontent.com/Curs3W4ll/Dotfiles/master/installTerminator.sh" && chmod +x /tmp/terminatorInstaller.sh && /tmp/./terminatorInstaller.sh'
+sh -c 'rm -f /tmp/terminatorInstaller.sh && curl -fLo -H "Cache-Control: no-cache, no-store" /tmp/terminatorInstaller.sh --create-dirs "https://raw.githubusercontent.com/Curs3W4ll/Dotfiles/master/installTerminator.sh" && chmod +x /tmp/terminatorInstaller.sh && /tmp/./terminatorInstaller.sh'
 ```
 
 ## Other docs
