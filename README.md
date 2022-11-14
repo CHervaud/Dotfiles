@@ -22,12 +22,12 @@ All installations scripts [here](script/install/) and all configurations scripts
 
 If you just want to install neovim configuration, execute the following command
 ```sh
-sh -c 'rm -f /tmp/nvimInstaller.sh && curl -fLo /tmp/nvimInstaller.sh --create-dirs "https://raw.githubusercontent.com/Curs3W4ll/Dotfiles/master/installNvim.sh" && chmod +x /tmp/nvimInstaller.sh && /tmp/./nvimInstaller.sh'
+sh -c 'rm -f /tmp/nvimInstaller.sh && curl -fLo -H "Cache-Control: no-cache, no-store" /tmp/nvimInstaller.sh --create-dirs "https://raw.githubusercontent.com/Curs3W4ll/Dotfiles/master/installNvim.sh" && chmod +x /tmp/nvimInstaller.sh && /tmp/./nvimInstaller.sh'
 ```
 
 If you just want to install zsh configuration, execute the following command
 ```sh
-sh -c 'rm -f /tmp/zshInstaller.sh && curl -fLo /tmp/zshInstaller.sh --create-dirs "https://raw.githubusercontent.com/Curs3W4ll/Dotfiles/master/installZsh.sh" && chmod +x /tmp/zshInstaller.sh && /tmp/./zshInstaller.sh'
+sh -c 'rm -f /tmp/zshInstaller.sh && curl -fLo -H "Cache-Control: no-cache, no-store" /tmp/zshInstaller.sh --create-dirs "https://raw.githubusercontent.com/Curs3W4ll/Dotfiles/master/installZsh.sh" && chmod +x /tmp/zshInstaller.sh && /tmp/./zshInstaller.sh'
 ```
 
 If you just want to install terminator configuration, execute the following command
