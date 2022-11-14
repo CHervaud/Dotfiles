@@ -41,7 +41,9 @@ else
 fi
 if [[ ! -f $HOME/.ohmyzsh ]]; then
     echo -e "\n${RedColor}Please install oh my zsh first (run: 'sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"')${NoColor}"
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    exit 1
+else
+    echo -e "${CyanColor}Using ohmyzsh at ${ZSH}${NoColor}"
 fi
 set -eo pipefail
 
