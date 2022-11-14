@@ -39,7 +39,7 @@ if [ ! $? -eq 0 ]; then
 else
     echo -e "${CyanColor}Using bat at $batBinPath${NoColor}"
 fi
-if [[ ! -d $HOME/.ohmyzsh ]]; then
+if [[ ! -d $HOME/.oh-my-zsh ]]; then
     echo -e "${RedColor}Please install oh my zsh first (run: sh -c \"\$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\")${NoColor}"
     exit 1
 else
