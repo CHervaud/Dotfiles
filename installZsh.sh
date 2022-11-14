@@ -39,6 +39,10 @@ if [ ! $? -eq 0 ]; then
 else
     echo -e "${CyanColor}Using bat at $batBinPath${NoColor}"
 fi
+if [[ ! -f $HOME/.ohmyzsh ]]; then
+    echo -e "\n${RedColor}Please install oh my zsh first (run: 'sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"')${NoColor}"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
 set -eo pipefail
 
 confirm "Using this script will remove the existing zsh configuration ('.zshrc' file), Continue"
@@ -50,11 +54,6 @@ git clone https://github.com/Curs3W4ll/Dotfiles ${dotfilesPath}
 echo -e "${CyanColor}Copying zsh configuration${NoColor}"
 rm -rf $destPath/.zshrc
 cp $dotfilesPath/data/zsh/zshrc $destPath/.zshrc
-
-if [[ ! -f $HOME/.ohmyzsh ]]; then
-    echo -e "${CyanColor}Installing ohmyzsh${NoColor}"
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
 
 echo -e "${CyanColor}Installing k zsh plugin${NoColor}"
 git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
