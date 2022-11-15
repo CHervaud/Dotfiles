@@ -54,13 +54,40 @@ if [ ! $? -eq 0 ]; then
 else
     echo -e "${CyanColor}Using yarn at $yarnBinPath${NoColor}"
 fi
-set -eo pipefail
 pipBinPath=$( which pip )
 if [ ! $? -eq 0 ]; then
     echo -e "\n${RedColor}Please install python pip first${NoColor}"
     exit 1
 else
-    echo -e "${CyanColor}Using pin at $pipBinPath${NoColor}"
+    echo -e "${CyanColor}Using pip at $pipBinPath${NoColor}"
+fi
+ripgrepBinPath=$( which rg )
+if [ ! $? -eq 0 ]; then
+    echo -e "\n${RedColor}Please install ripgrep first(https://github.com/BurntSushi/ripgrep)${NoColor}"
+    exit 1
+else
+    echo -e "${CyanColor}Using ripgrep at $ripgrepBinPath${NoColor}"
+fi
+fdBinPath=$( which fd )
+if [ ! $? -eq 0 ]; then
+    echo -e "\n${RedColor}Please install fd first(https://github.com/sharkdp/fd)${NoColor}"
+    exit 1
+else
+    echo -e "${CyanColor}Using fd at $fdBinPath${NoColor}"
+fi
+tarBinPath=$( which tar )
+if [ ! $? -eq 0 ]; then
+    echo -e "\n${RedColor}Please install tar first${NoColor}"
+    exit 1
+else
+    echo -e "${CyanColor}Using tar at $tarBinPath${NoColor}"
+fi
+curlBinPath=$( which curl )
+if [ ! $? -eq 0 ]; then
+    echo -e "\n${RedColor}Please install curl first${NoColor}"
+    exit 1
+else
+    echo -e "${CyanColor}Using curl at $curlBinPath${NoColor}"
 fi
 set -eo pipefail
 
