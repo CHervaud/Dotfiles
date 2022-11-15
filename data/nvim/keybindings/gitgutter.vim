@@ -8,3 +8,5 @@
 :nmap <leader>gn :GitGutterNextHunk<CR>:GitGutterPreviewHunk<CR>
 " Go to previous change
 :nmap <leader>gN :GitGutterPrevHunk<CR>:GitGutterPreviewHunk<CR>
+" Rollback changes
+:nmap <leader>gu :GitGutterUndoHunk<CR>

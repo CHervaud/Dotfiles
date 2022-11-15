@@ -35,6 +35,13 @@ vnoremap <C-r> "hy:%s/<C-r>h/<C-r>h/gI<left><left><left>
 nmap <silent><nowait> <Space> za
 nmap <nowait> reload :so $MYVIMRC<CR>
 
+nnoremap <Left> k
+nnoremap <Up> l
+nnoremap <Right> j
+nnoremap <Down> h
+nnoremap <Up><Up><Down><Down><Left><Right><Left><Right>ba<Space> :qa!<CR>
+nnoremap <Up><Up><Down><Down><Left><Right><Left><Right>ba<Enter> :qa!<CR>
+
 source $HOME/.config/nvim/keybindings/arduino.vim
 source $HOME/.config/nvim/keybindings/gitgutter.vim
 source $HOME/.config/nvim/keybindings/mkdp.vim
@@ -42,10 +49,5 @@ source $HOME/.config/nvim/keybindings/nerdtree.vim
 source $HOME/.config/nvim/keybindings/cmake.vim
 source $HOME/.config/nvim/keybindings/coc.vim
 source $HOME/.config/nvim/keybindings/grammarous.vim
-
-nnoremap <Left> k
-nnoremap <Up> l
-nnoremap <Right> j
-nnoremap <Down> h
-nnoremap <Up><Up><Down><Down><Left><Right><Left><Right>ba<Space> :qa!<CR>
-nnoremap <Up><Up><Down><Down><Left><Right><Left><Right>ba<Enter> :qa!<CR>
+source $HOME/.config/nvim/keybindings/telescope.vim
+source $HOME/.config/nvim/keybindings/bufferline.vim

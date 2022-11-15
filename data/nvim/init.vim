@@ -21,7 +21,7 @@ set nu rnu                                      " Make lines number display rela
 set mouse=""                                    " Disable mouse support
 
 " Separate c file as a new type
-augroup project
+augroup filetypedetect
   autocmd!
   autocmd BufRead,BufNewFile *.h,*.c set filetype=c
 augroup END
@@ -57,13 +57,20 @@ au BufNewFile,BufRead Jenkinsfile setf groovy
 
 source $HOME/.config/nvim/plugs-set/vimplug.vim
 
-source $HOME/.config/nvim/plugs-set/coc.vim
+source $HOME/.config/nvim/plugs-set/notify.vim
 
+syntax enable                                   " Enable syntax higllighing
+
+source $HOME/.config/nvim/plugs-set/coc.vim
+source $HOME/.config/nvim/plugs-set/coc-notify.vim
+
+source $HOME/.config/nvim/plugs-set/treesitter.vim
 source $HOME/.config/nvim/plugs-set/airline.vim
 source $HOME/.config/nvim/plugs-set/arduino.vim
 source $HOME/.config/nvim/plugs-set/better-whitespace.vim
 source $HOME/.config/nvim/plugs-set/bufferline.vim
 source $HOME/.config/nvim/plugs-set/gitmessenger.vim
+source $HOME/.config/nvim/plugs-set/gitgutter.vim
 source $HOME/.config/nvim/plugs-set/instant.vim
 source $HOME/.config/nvim/plugs-set/mkdp.vim
 source $HOME/.config/nvim/plugs-set/nerdtree.vim
@@ -73,13 +80,10 @@ source $HOME/.config/nvim/plugs-set/vimspector.vim
 source $HOME/.config/nvim/plugs-set/nerdcommenter.vim
 source $HOME/.config/nvim/plugs-set/haskell.vim
 source $HOME/.config/nvim/plugs-set/clang-format.vim
+" source $HOME/.config/nvim/plugs-set/catppuccin.vim
+source $HOME/.config/nvim/plugs-set/nightfox.vim
 
 source $HOME/.config/nvim/keybindings/map.vim
-
-syntax enable                                   " Enable syntax higllighing
-
-" Color theme
-colorscheme nightfox
 
 " Image preview
 :lua require('image').setup { render = { min_padding = 5, show_label = true, use_dither = true, }, events = { update_on_nvim_resize = true, }, }

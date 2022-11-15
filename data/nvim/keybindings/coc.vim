@@ -51,14 +51,6 @@ endfunction
 " Toggle coc-tabnine
 nmap <leader>tn :call CocAction('toggleExtension', 'coc-tabnine')<CR>
 
-" Naviguate in buffers
-" Next
-nnoremap <leader>k :bn<CR>
-" Prev
-nnoremap <leader>j :bp<CR>
-" Close
-nnoremap <leader>bq :bp <BAR> bd #<CR>
-
 " Use <C-l> for trigger snippet expand.
 imap <C-l> <Plug>(coc-snippets-expand)
 

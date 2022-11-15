@@ -17,15 +17,14 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'airblade/vim-gitgutter'
 Plug 'luochen1990/rainbow'
-Plug 'ap/vim-css-color'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'wsdjeg/vim-todo'
 Plug 'cdelledonne/vim-cmake'
 Plug 'jbyuki/instant.nvim'
 Plug 'preservim/nerdcommenter'
 Plug 'rhysd/vim-clang-format'
-" Plug 'PhilRunninger/bufselect.vim'
 Plug 'KabbAmine/vCoolor.vim'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin'  }
 Plug 'EdenEast/nightfox.nvim'
 Plug 'othree/html5.vim'
 Plug 'neoclide/vim-jsx-improve'
@@ -35,7 +34,10 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'kevinhwang91/nvim-bqf'
 Plug 'rcarriga/nvim-notify'
 Plug 'tpope/vim-fugitive'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'lilydjwg/colorizer'
 
 call plug#end()
