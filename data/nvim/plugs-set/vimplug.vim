@@ -1,7 +1,7 @@
 call plug#begin()
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'Nero-F/vim-tek-header'
+Plug 'Nero-F/epitech.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-surround'

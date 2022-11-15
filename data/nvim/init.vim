@@ -29,7 +29,7 @@ augroup END
 " Tab
 set ts=4 sw=4
 set expandtab
-autocmd FileType javascript,groovy,yaml,vue,css,json setlocal ts=2 sw=2 expandtab " Tab of 2 for js files
+autocmd FileType javascript,groovy,yaml,vue,css,json,vim setlocal ts=2 sw=2 expandtab " Tab of 2 for js files
 
 " Fold with 'zc' and 'zo'
 set foldmethod=indent
