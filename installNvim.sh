@@ -70,8 +70,11 @@ else
 fi
 fdBinPath=$( which fd )
 if [ ! $? -eq 0 ]; then
-    echo -e "\n${RedColor}Please install fd first(https://github.com/sharkdp/fd)${NoColor}"
-    exit 1
+    fdBinPath=$( which fdfind)
+    if [ !$? -eq 0 ]; then
+        echo -e "\n${RedColor}Please install fd first(https://github.com/sharkdp/fd)${NoColor}"
+        exit 1
+    fi
 else
     echo -e "${CyanColor}Using fd at $fdBinPath${NoColor}"
 fi
