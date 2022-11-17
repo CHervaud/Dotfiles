@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 NoColor="\033[0m"
 CyanColor="\033[0;36m"
