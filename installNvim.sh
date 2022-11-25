@@ -54,9 +54,50 @@ if [ ! $? -eq 0 ]; then
 else
     echo -e "${CyanColor}Using yarn at $yarnBinPath${NoColor}"
 fi
+pipBinPath=$( which pip )
+if [ ! $? -eq 0 ]; then
+    echo -e "\n${RedColor}Please install python pip first${NoColor}"
+    exit 1
+else
+    echo -e "${CyanColor}Using pip at $pipBinPath${NoColor}"
+fi
+ripgrepBinPath=$( which rg )
+if [ ! $? -eq 0 ]; then
+    echo -e "\n${RedColor}Please install ripgrep first(https://github.com/BurntSushi/ripgrep)${NoColor}"
+    exit 1
+else
+    echo -e "${CyanColor}Using ripgrep at $ripgrepBinPath${NoColor}"
+fi
+fdBinPath=$( which fd )
+if [ ! $? -eq 0 ]; then
+    fdBinPath=$( which fdfind)
+    if [ ! $? -eq 0 ]; then
+        echo -e "\n${RedColor}Please install fd first(https://github.com/sharkdp/fd)${NoColor}"
+        exit 1
+    fi
+else
+    echo -e "${CyanColor}Using fd at $fdBinPath${NoColor}"
+fi
+tarBinPath=$( which tar )
+if [ ! $? -eq 0 ]; then
+    echo -e "\n${RedColor}Please install tar first${NoColor}"
+    exit 1
+else
+    echo -e "${CyanColor}Using tar at $tarBinPath${NoColor}"
+fi
+curlBinPath=$( which curl )
+if [ ! $? -eq 0 ]; then
+    echo -e "\n${RedColor}Please install curl first${NoColor}"
+    exit 1
+else
+    echo -e "${CyanColor}Using curl at $curlBinPath${NoColor}"
+fi
 set -eo pipefail
 
 confirm "Using this script will remove the existing neovim configuration, Continue"
+
+echo -e "${CyanColor}Install pynvim${NoColor}"
+pip install pynvim
 
 echo -e "${CyanColor}Cloning Dotfiles to ${dotfilesPath}${NoColor}"
 rm -rf $dotfilesPath
@@ -90,6 +131,7 @@ cp $dotfilesPath/data/coc/* $cocPath -r
 echo -e "${CyanColor}Installing last plugins and coc${NoColor}"
 nvim -c PlugInstall -c PlugUpdate -c qa
 nvim -c "CocInstall coc-tabnine coc-snippets coc-yaml coc-tsserver coc-styled-components coc-sh coc-python coc-json coc-clangd"
+nvim -c "NightfoxCompile" -c qa
 
 echo -e "${CyanColor}Removing cloned repository${NoColor}"
 rm -rf $dotfilesPath

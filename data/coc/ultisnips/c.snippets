@@ -39,12 +39,16 @@ int main(void)
 }
 endsnippet
 
-snippet inc "Create system include line" A
+snippet inc "Create system include line" "re.match('^inc$', snip.buffer[snip.line])" bAe
 #include <${0:#lib}.h>
 endsnippet
 
-snippet Inc "Create custom include line" A
+snippet Inc "Create custom include line" "re.match('^Inc$', snip.buffer[snip.line])" bAe
 #include "${0:#lib}.h"
+endsnippet
+
+snippet prag "Create pragma header" "re.match('^prag$', snip.buffer[snip.line])" bAe
+#pragma once
 endsnippet
 
 snippet cc "Create basic char named c"

@@ -55,7 +55,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -144,6 +144,7 @@ alias gbdelr="git push origin --delete"
 alias grest="git restore --staged ."
 alias grestc="git restore ."
 alias gacp="git-add-commit-push $@"
+alias gacpc="git-add-commit-push-close $@"
 alias gda="git-diff-add $@"
 alias gbs="gpl && gpla && git-branch-switch $@"
 alias gbdelall="git-branch-delete-all $@"
@@ -207,8 +208,8 @@ function git-branch-switch {
 }
 
 function git-branch-delete-all {
-    git branch -D $1
     git push origin --delete $1
+    git branch -D $1
 }
 
 function v {
@@ -241,6 +242,18 @@ function git-add-commit-push {
     ga .
     if [[ -n $1 ]] && [[ -n $2 ]]; then
         git commit -m $1 -m $2
+    elif [[ -n $1 ]]; then
+        git commit -m $1
+    else
+        git commit -m "Update"
+    fi
+    gp
+}
+
+function git-add-commit-push-close {
+    ga .
+    if [[ -n $1 ]] && [[ -n $2 ]]; then
+        git commit -m "$1 #$2" -m "Close #$2"
     elif [[ -n $1 ]]; then
         git commit -m $1
     else
