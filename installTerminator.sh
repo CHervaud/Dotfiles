@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 NoColor="\033[0m"
 CyanColor="\033[0;36m"
@@ -48,6 +48,7 @@ rm -rf $dotfilesPath
 git clone https://github.com/Curs3W4ll/Dotfiles ${dotfilesPath}
 
 echo -e "${CyanColor}Copying configuration${NoColor}"
+mkdir -p $dotfilesPath/data/terminator/
 cp $dotfilesPath/data/terminator/config $terminatorPath/config
 
 echo -e "${CyanColor}Removing cloned repository${NoColor}"
